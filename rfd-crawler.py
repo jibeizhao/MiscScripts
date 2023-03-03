@@ -41,10 +41,39 @@ for div in divs:
     "post_voting": post_voting,
   }
 
-  # insert the object into the mysql database table
-  sql = "INSERT INTO hot_deals (topictitle_retailer, title, post_voting) VALUES (%s, %s, %s)"
-  val = (obj["topictitle_retailer"], obj["title"], obj["post_voting"])
+  # check if the object exists in the database table
+  sql = "SELECT * FROM hot_deals WHERE topictitle_retailer=%s AND title=%s"
+  val = (obj["topictitle_retailer"], obj["title"])
   mycursor.execute(sql, val)
 
-# commit the changes to the database
-mydb.commit()
+  # if it exists, update the post voting value and send an email if needed
+  if mycursor.fetchone():
+    sql = "UPDATE hot_deals SET post_voting=%s WHERE topictitle_retailer=%s AND title=%s"
+    val = (obj["post_voting"], obj["topictitle_retailer"], obj["title"])
+    mycursor.execute(sql, val)
+
+    # check if the old value is less than 10 and the new value is larger than 10
+    old_value = int(mycursor.fetchone()[2])
+    new_value = int(obj["post_voting"])
+
+    # if yes, send an email to foo@bar.com with the title
+    if old_value <10 and new_value >10:
+      import smtplib
+
+      # create a SMTP object for gmail server
+      server=smtplib.SMTP('smtp.gmail.com',587)
+
+      # start TLS for security
+      server.starttls()
+
+      # login with your gmail account credentials
+      server.login('yourgmailaccount','yourgmailpassword')
+
+      # compose a message to be sent
+      message='Subject: {}\n\n{}'.format(obj['title'], 'This deal has more than ten votes now!')
+
+      # send an email to foo@bar.com with the message
+      server.sendmail('yourgmailaccount','foo@bar.com',message)
+
+      # close the connection
+      server.quit()
