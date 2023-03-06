@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import twilio_call_sms # Import the module
 
 # connect to mysql database
 import mysql.connector
@@ -77,3 +78,17 @@ for div in divs:
 
       # close the connection
       server.quit()
+
+    if old_value <20 and new_value >20:
+      twilio_call_sms.make_call('+16137891234')
+
+  # else, insert it into the database table as usual
+
+  else:
+    sql= "INSERT INTO hot_deals (topictitle_retailer,title,post_voting) VALUES (%s,%s,%s)"
+    val=(obj["topictitle_retailer"],obj["title"],obj["post_voting"])
+    mycursor.execute(sql,val)
+
+    # commit the changes to the database
+
+    mydb.commit()
