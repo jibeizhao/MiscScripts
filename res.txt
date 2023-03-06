@@ -1,0 +1,3498 @@
+<!doctype html>
+<html class="no-js supports-no-cookies" lang="en">
+    <head>
+
+
+      
+      
+      <!-- Google Tag Manager NEW JEFF -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-NX6QRHL');</script>
+
+<!-- End Google Tag Manager -->
+
+
+
+      
+      
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-P7W4FWH30Z"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-P7W4FWH30Z');
+      </script>
+<!-- starapps_core_start -->
+<!-- This code is automatically managed by StarApps Studio -->
+<!-- Please contact support@starapps.studio for any help -->
+<!-- File location: snippets/starapps-core.liquid -->
+
+
+
+
+<script type="application/json" sa-language-info=\"true\" data-no-instant="true">{"current_language":"en", "default_language":"en", "money_format":"\u003cspan class=money\u003e${{amount}}\u003c\/span\u003e"}</script>
+
+    
+<!-- starapps_core_end -->
+
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.4ocean.com",
+        "logo": "https://cdn.shopify.com/s/files/1/0996/1022/files/Logo_Blue.png?v=1625583369"
+        }
+        </script>
+
+        <script src="https://www.googleoptimize.com/optimize.js?id=OPT-W4B3DRP"></script>
+        <!-- Yottaa -->
+        <script src="https://cdn.yottaa.com/rapid.min.js?key=019WTdOrwQB2rA"></script>
+        <script>
+            Yo.configure('https://qoe-1.yottaa.net/api/v1/configure.rapid.js?key=019WTdOrwQB2rA');
+        </script>
+            <!-- End of Yottaa -->
+
+            <!-- CRITEO START -->
+                <script type="text/javascript">
+  (function(){
+    var deviceType = /iPad/.test(navigator.userAgent) ? "t" : /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Silk/.test(navigator.userAgent) ? "m" : "d";
+    window.criteo_q = window.criteo_q || [];
+    window.criteo_q.push(
+      { event: "setAccount", account: 51574 },
+      { event: "setEmail", email: "" },
+      { event: "setSiteType", type: deviceType },
+      { event: "setZipcode", zipcode: "" },
+        
+        
+          { event: "viewPage" , ecpplugin: "shopify-mc" }
+        
+    );
+    window.addEventListener('load', function() {
+      // ajax request catching
+      (function(open) {
+        XMLHttpRequest.prototype.open = function(method, url, async, user, pass) {
+          this.addEventListener("readystatechange", function() {
+            if (this.readyState == 4 && this._url.includes("/add.js") && "" != "") {
+              try {
+                $.getJSON("/cart.js", function(data) {
+                  var basketData = [];
+                  var item;
+                  if (!data.items || !data.items.length) return;
+                  for (var i = 0; i < data.items.length; i++) {
+                    item = data.items[i];
+                    if (item.product_id == "") {
+                      basketData.push({
+                        id: item.product_id,
+                        price: (typeof(item.price) != "number") ? item.price : (item.price/100),
+                        quantity: item.quantity
+                      });
+                    }
+                  }
+                  window.criteo_q.push({
+                    event: "addToCart",
+                    ecpplugin: "shopify-mc",
+                    product: basketData 
+                  });
+                });
+              } catch (err) {
+                // do nothing
+              }
+            }
+          }, false);
+          open.call(this, method, url, async, user, pass);
+        };
+      })(XMLHttpRequest.prototype.open);
+
+      // fetch request catching
+      const crtoMock = window.fetch;
+      window.fetch = function() {
+        return new Promise((resolve, reject) => {
+          crtoMock.apply(this, arguments)
+            .then((response) => {
+              if(response.url.includes("/add.js") && response.type != "cors" && "" != ""){
+                try {
+                  $.getJSON("/cart.js", function(data) {
+                    var basketData = [];
+                    var item;
+                    if (!data.items || !data.items.length) return;
+                    for (var i = 0; i < data.items.length; i++) {
+                      item = data.items[i];
+                      if (item.product_id == "") {
+                        basketData.push({
+                          id: item.product_id,
+                          price: (typeof(item.price) != "number") ? item.price : (item.price/100),
+                          quantity: item.quantity
+                        });
+                      }
+                    }
+                    window.criteo_q.push({
+                      event: "addToCart",
+                      ecpplugin: "shopify-mc",
+                      product: basketData 
+                    });
+                  });
+                } catch (err) {
+                  // do nothing
+                }
+              }
+              resolve(response);
+            })
+            .catch((error) => {
+              reject(error);
+            })
+        });
+      }
+    }, false);
+  })();
+</script>
+            <!-- CRITEO END -->
+
+        
+    <!-- Google Tag Manager -->
+    <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
+      new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
+      "https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,"script","dataLayer","GTM-WPV7BLZ");
+    </script>
+    <!-- End Google Tag Manager -->
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    </script>
+
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+        <meta name="theme-color" content="#c4cdd5">
+        <link rel="canonical" href="https://www.4ocean.com/account/login"><link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0996/1022/files/favicon_32x32.png?v=1588785956" type="image/png"><title>Account
+&ndash;
+                4ocean</title>
+
+
+<meta property="og:site_name" content="4ocean">
+<meta property="og:url" content="https://www.4ocean.com/account/login">
+<meta property="og:title" content="Account">
+<meta property="og:type" content="website">
+<meta property="og:description" content="4ocean offers bracelets made from recycled materials. Every bracelet purchased funds the removal of one pound of trash from the ocean and coastlines. Join the movement.">
+
+<meta name="twitter:site" content="@4Ocean">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Account">
+<meta name="twitter:description" content="4ocean offers bracelets made from recycled materials. Every bracelet purchased funds the removal of one pound of trash from the ocean and coastlines. Join the movement.">
+
+        
+<link type="text/css" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/layout.theme.css?v=117603855635360146891655397820" rel="stylesheet"><link type="text/css" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/layout.theme.styleLiquid.scss.css?v=75789508706063305271655397820" rel="stylesheet">
+        <style>
+  @font-face {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=82956cf5391899d84e1cf0c4f28415d60d0b193754fb5c9199bcba99d5027cc6") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=457e37d6b69d4fa5e5bc00b7a50067e1455f6636bfd284c9981480b6cff6a482") format("woff");
+}
+
+  @font-face {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.fe093fe9ca22a15354813c912484945a36b79146.woff2?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=82956cf5391899d84e1cf0c4f28415d60d0b193754fb5c9199bcba99d5027cc6") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n4.8bddb85c18a0094c427a9bf65dee963ad88de4e8.woff?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=457e37d6b69d4fa5e5bc00b7a50067e1455f6636bfd284c9981480b6cff6a482") format("woff");
+}
+
+@font-face {
+  font-family: Helvetica;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.39bee04bd277a9c4e94e2fd42d53f4e3c0afb8a5.woff2?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=97ca4b021b8cdcd9c2c2a42003292130f1a094c0e4ac8d24e2bbc16e1136e47f") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_n7.b95359461a6788d5549e702cb2123bc40c227e49.woff?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=58814a8c240b4e5bbd666b3867dd432d18e2e7375e342f5ab76baf07b9b0e434") format("woff");
+}
+
+  @font-face {
+  font-family: Helvetica;
+  font-weight: 700;
+  font-style: oblique;
+  src: url("https://fonts.shopifycdn.com/helvetica/helvetica_o7.215fd4ca1a06214fa01e44328a1992c977700ea2.woff2?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=0646af727e3ce278610bfa1ca7bb3fabc815659af8e9bd15cb7a0499cb4bc9fe") format("woff2"),
+       url("https://fonts.shopifycdn.com/helvetica/helvetica_o7.b0a2026ae2aa64d060f9ce0ee1b3c3c1aa21bf88.woff?h10=NG9jZWFuLnR2&h11=bXk0b2NlYW4ub3Jn&h12=NG9jZWFucGxhc3RpYy5jb20&h13=Y3VyZXRoZW9jZWFuLm5ldA&h14=bGVnYWN5LjRvY2Vhbi5jb20&h15=NC1vY2Vhbi5iaXo&h16=NG9jZWFuLnVr&h1=NG9jZWFuYnJhY2VsZXRzLmNvbQ&h2=NG9jZWFuYnJhY2VsZXQuY29t&h3=NG9jZWFuLm9yZw&h4=NG9jZWFuLmNvbQ&h5=NG9jZWFuLnNob3A&h6=NG9jZWFuLnN0b3Jl&h7=NG9jYW4uY29t&h8=NG9lY2FuLmNvbQ&h9=NG9jZWFuLmxh&hmac=00ad7fee0abe332be5145d9af9ae24cc6fd1191bafcc9207145f9a98d77e9dd6") format("woff");
+}
+
+
+  :root {
+    --color-accent: #c4cdd5;
+    --color-body-text: #161d25;
+    --color-main-background: #fff;
+    --color-border: #849bb6;
+
+    --font-heading: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    --font-body: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    --font-body-weight: 400;
+    --font-body-style: normal;
+    --font-body-bold-weight: 700;
+  }
+</style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        
+        <script>
+            document.documentElement.className = document.documentElement.className.replace('no-js', '');
+
+            window.theme = {
+              strings: {
+                addToCart: "Add To My Cart",
+                soldOut: "Sold Out",
+                unavailable: "Unavailable"
+              },
+              moneyFormat: "\u003cspan class=money\u003e${{amount}}\u003c\/span\u003e"
+            };
+        </script>
+
+        
+<script type="text/javascript" src="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/vendors@layout.theme.js?v=171558622412440293111655397696" defer="defer"></script><script type="text/javascript" src="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/layout.theme.js?v=133391951504988183641655397664" defer="defer"></script><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/template.cart.js?v=34875568468939174741655397686" as="script"><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/vendors@template.gift_card.js?v=158770390262543019551655397697" as="script"><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/template.gift_card.js?v=138173959825457165111655397687" as="script"><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/vendors@template.product@template.product.product-v2.js?v=47427095729572744921655397703" as="script"><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/template.product.js?v=132349917628440337011655397692" as="script"><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/template.product.product-v2.js?v=125822816375722658381655397693" as="script"><link rel="prefetch" href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/template.addresses.js?v=163832280214472128151655397685" as="script"><script type="text/javascript" src="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/template.login.js?v=159460443263634319691655397690" defer="defer"></script>
+
+        <script src="//cdn.shopify.com/shopifycloud/shopify/assets/themes_support/option_selection-fe6b72c2bbdd3369ac0bfefe8648e3c889efca213baefd4cfb0dd9363563831f.js" type="text/javascript"></script>
+
+        <script src="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/minicart.js?v=182925502880943203181655397820" type="text/javascript"></script>
+
+        <script src="https://unpkg.com/micromodal@0.4.6/dist/micromodal.min.js"></script>
+
+        <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="94cyaboV84n768GMsXnDfVyMIx_IA4rbdf8r7qk3GRY">
+<meta name="google-site-verification" content="yNuRDUo85VEh7QHLFcl-LM27Qa8mmiN7cZ0bGL-LksU">
+<meta name="google-site-verification" content="jIeVnRDrFGVi3xTRRLqSEdIjW8OUeX9-v6-JhF7gEPI">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/9961022/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="b7adf74b6e1c66115c2424da3ecb16ef">
+<meta id="in-context-paypal-metadata" data-shop-id="9961022" data-venmo-supported="true" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="USD">
+<meta id="amazon-payments-metadata" data-amazon-payments="true" data-amazon-payments-seller-id="A1SSE7KMPTKBRX" data-amazon-payments-callback-url="https://www.4ocean.com/9961022/amazon_payments/callback" data-amazon-payments-sandbox-mode="false" data-amazon-payments-client-id="amzn1.application-oa2-client.460e60e50d884c1d8412e31cfa6c7535" data-amazon-payments-region="US" data-amazon-payments-language="en-US" data-amazon-payments-widget-library-url="https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js">
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":9961022,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/9961022","merchantName":"4ocean","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","jcb","discover","chinaUnionPay","elo"],"total":{"type":"pending","label":"4ocean","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"b7adf74b6e1c66115c2424da3ecb16ef","betas":["rich-media-storefront-analytics"],"domain":"www.4ocean.com","predictiveSearch":true,"shopId":9961022,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js?v=2","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js?v=2","locale":"en"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "4ocean.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "CA";
+Shopify.theme = {"name":"Tiktok Add|06.17.22","id":130464678081,"theme_store_id":null,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "cdn.shopify.com";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.apiHost = "shop.app\/pay";</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["https:\/\/cdn.hextom.com\/js\/quickannouncementbar.js?shop=4ocean.myshopify.com","https:\/\/cdn.hextom.com\/js\/freeshippingbar.js?shop=4ocean.myshopify.com","https:\/\/upsells.boldapps.net\/v2_ui\/js\/UpsellTracker.js?shop=4ocean.myshopify.com","https:\/\/str.rise-ai.com\/?shop=4ocean.myshopify.com","https:\/\/strn.rise-ai.com\/?shop=4ocean.myshopify.com","https:\/\/js.klevu.com\/klevu-js-v1\/js\/klevuScript.js?klevuapi=klevu-160528098235812957\u0026lang=en\u0026shop=4ocean.myshopify.com","https:\/\/apps.omegatheme.com\/region-restrictions\/regionrestrictions.js?shop=4ocean.myshopify.com","https:\/\/manifester.us\/manifest-script-tag?shop=4ocean.myshopify.com","https:\/\/app.leadsrx.com\/visitor-js.php?acctTag=lgwzjw41918\u0026shop=4ocean.myshopify.com","https:\/\/upsells.boldapps.net\/v2_ui\/js\/upsell.js?shop=4ocean.myshopify.com","\/\/dynamic.criteo.com\/js\/ld\/ld.js?a=51574\u0026shop=4ocean.myshopify.com","https:\/\/cdn.secomapp.com\/freegifts\/app\/4ocean.myshopify.com_1621965906.js?shop=4ocean.myshopify.com","https:\/\/shopify.hero-slider.napp1.neno-digital.io\/bundle\/storefront.js?shop=4ocean.myshopify.com\u0026shop=4ocean.myshopify.com","\/\/cdn.shopify.com\/proxy\/22c6522497dc3ddf830a4d5962c72f89ae1bef20b68b8be5400470f9cb136c21\/cdn.shopify.com\/s\/files\/1\/0996\/1022\/t\/903\/assets\/nerdy_form_init.js?v=1655409693\u0026shop=4ocean.myshopify.com\u0026sp-cache-control=cHVibGljLCBtYXgtYWdlPTkwMA","https:\/\/shopifyorderlimits.s3.amazonaws.com\/limits\/load.js?shop=4ocean.myshopify.com","https:\/\/shopifyorderlimits.s3.amazonaws.com\/limits\/load.js?shop=4ocean.myshopify.com","https:\/\/shopify.covet.pics\/covet-pics-widget-inject.js?shop=4ocean.myshopify.com","https:\/\/cdn.robinpro.gallery\/js\/client.js?shop=4ocean.myshopify.com","https:\/\/cdn.attn.tv\/4o\/dtag.js?shop=4ocean.myshopify.com","https:\/\/widgets.automizely.com\/aftership\/gmv.js?organization_id=465d43de0d31437b8f5d5d0a71e7e162\u0026shop=4ocean.myshopify.com","https:\/\/d3g420rgevyqxw.cloudfront.net\/cffPCLoader_min.js?shop=4ocean.myshopify.com","https:\/\/app.electricsms.com\/cart-widget\/widget.min.js?shop=4ocean.myshopify.com","https:\/\/intg.snapchat.com\/shopify\/shopify-scevent-init.js?id=6b1ebd87-3fc5-43f0-8d79-ccb7446f0866\u0026shop=4ocean.myshopify.com","https:\/\/cdn.refersion.com\/shop.js?key=pub_290660546ce7f7515e59\u0026check_token=true\u0026add_order_attributes_to_cart=false\u0026shop=4ocean.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":9961022,"offset":-14400,"reqid":"e06d3584-5322-4989-884d-e5ff36d86f20","pageurl":"www.4ocean.com\/account\/login?return_url=%2Faccount","u":"9b978cd718fd"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script integrity="sha256-N6F6ZjvOAMPhcD0kfZWNQQgx6eXaxFfh6aqfN0geLrU=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-37a17a663bce00c3e1703d247d958d410831e9e5dac457e1e9aa9f37481e2eb5.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/shopify_pay/storefront-b61f50798075db890698930c4405673937fe89353f7fea7be88b5ce16a9c0af8.js?v=20210208"></script>
+<script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 240px;
+  }
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+        <!-- Start Fonts -->
+        <link as="style" href="https://use.typekit.net/sbd1sgy.css" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+        <noscript>
+            <link href="https://use.typekit.net/sbd1sgy.css" rel="stylesheet"/>
+        </noscript>
+
+        <style>
+            @font-face {
+              font-family: 'SlatePro-Medium';
+              src:    url('https://cdn.shopify.com/s/files/1/0996/1022/files/slate-pro.eot?v=1588948930');
+              src:    url('https://cdn.shopify.com/s/files/1/0996/1022/files/slate-pro.eot?v=1588948930?#iefix') format('embedded-opentype'),
+                      url('https://cdn.shopify.com/s/files/1/0996/1022/files/slate-pro.woff2?v=1588948930') format('woff2'),
+                      url('https://cdn.shopify.com/s/files/1/0996/1022/files/slate-pro.woff?v=1588948930') format('woff'),
+                      url('https://cdn.shopify.com/s/files/1/0996/1022/files/slate-pro.ttf?v=1588948930') format('truetype');
+              font-display: swap;
+            }
+
+            @font-face {
+              font-family: '4Ocean-Icon';
+              src:    url('https://cdn.shopify.com/s/files/1/0996/1022/files/4Ocean-Icon.eot?v=1590100279?v=1588948930');
+              src:    url('https://cdn.shopify.com/s/files/1/0996/1022/files/4Ocean-Icon.eot?v=1590100279?v=1588948930?#iefix') format('embedded-opentype'),
+                     url('https://cdn.shopify.com/s/files/1/0996/1022/files/4Ocean-Icon.woff?v=1590100280') format('woff'),
+                      url('https://cdn.shopify.com/s/files/1/0996/1022/files/4Ocean-Icon.ttf?v=1590100279') format('truetype');
+              font-display: swap;
+            }
+        </style>
+            <!-- End Fonts -->
+
+        <link href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/ehouse-ordergroove-styles.scss.css?v=49840971191398671241655397658" rel="stylesheet" type="text/css" media="all" />
+
+<script>window.BOLD = window.BOLD || {};
+    window.BOLD.common = window.BOLD.common || {};
+    window.BOLD.common.Shopify = window.BOLD.common.Shopify || {};
+    window.BOLD.common.Shopify.shop = {
+      domain: 'www.4ocean.com',
+      permanent_domain: '4ocean.myshopify.com',
+      url: 'https://www.4ocean.com',
+      secure_url: 'https://www.4ocean.com',
+      money_format: "\u003cspan class=money\u003e${{amount}}\u003c\/span\u003e",
+      currency: "USD"
+    };
+    window.BOLD.common.Shopify.customer = {
+      id: null,
+      tags: null,
+    };
+    window.BOLD.common.Shopify.cart = {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"USD","items_subtotal_price":0,"cart_level_discount_applications":[]};
+    window.BOLD.common.template = 'customers/login';window.BOLD.common.Shopify.formatMoney = function(money, format) {
+        function n(t, e) {
+            return "undefined" == typeof t ? e : t
+        }
+        function r(t, e, r, i) {
+            if (e = n(e, 2),
+                r = n(r, ","),
+                i = n(i, "."),
+            isNaN(t) || null == t)
+                return 0;
+            t = (t / 100).toFixed(e);
+            var o = t.split(".")
+                , a = o[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1" + r)
+                , s = o[1] ? i + o[1] : "";
+            return a + s
+        }
+        "string" == typeof money && (money = money.replace(".", ""));
+        var i = ""
+            , o = /\{\{\s*(\w+)\s*\}\}/
+            , a = format || window.BOLD.common.Shopify.shop.money_format || window.Shopify.money_format || "$ {{ amount }}";
+        switch (a.match(o)[1]) {
+            case "amount":
+                i = r(money, 2, ",", ".");
+                break;
+            case "amount_no_decimals":
+                i = r(money, 0, ",", ".");
+                break;
+            case "amount_with_comma_separator":
+                i = r(money, 2, ".", ",");
+                break;
+            case "amount_no_decimals_with_comma_separator":
+                i = r(money, 0, ".", ",");
+                break;
+            case "amount_with_space_separator":
+                i = r(money, 2, " ", ",");
+                break;
+            case "amount_no_decimals_with_space_separator":
+                i = r(money, 0, " ", ",");
+                break;
+            case "amount_with_apostrophe_separator":
+                i = r(money, 2, "'", ".");
+                break;
+        }
+        return a.replace(o, i);
+    };
+    window.BOLD.common.Shopify.saveProduct = function (handle, product) {
+      if (typeof handle === 'string' && typeof window.BOLD.common.Shopify.products[handle] === 'undefined') {
+        if (typeof product === 'number') {
+          window.BOLD.common.Shopify.handles[product] = handle;
+          product = { id: product };
+        }
+        window.BOLD.common.Shopify.products[handle] = product;
+      }
+    };
+    window.BOLD.common.Shopify.saveVariant = function (variant_id, variant) {
+      if (typeof variant_id === 'number' && typeof window.BOLD.common.Shopify.variants[variant_id] === 'undefined') {
+        window.BOLD.common.Shopify.variants[variant_id] = variant;
+      }
+    };window.BOLD.common.Shopify.products = window.BOLD.common.Shopify.products || {};
+    window.BOLD.common.Shopify.variants = window.BOLD.common.Shopify.variants || {};
+    window.BOLD.common.Shopify.handles = window.BOLD.common.Shopify.handles || {};window.BOLD.common.Shopify.saveProduct(null, null);window.BOLD.apps_installed = {"Currency":1,"Product Upsell":3} || {};window.BOLD.common.Shopify.metafields = window.BOLD.common.Shopify.metafields || {};window.BOLD.common.Shopify.metafields["bold_rp"] = {"recurring_type":2};window.BOLD.common.Shopify.metafields["bold_csp_defaults"] = {};window.BOLD.common.cacheParams = window.BOLD.common.cacheParams || {};
+</script><link href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/bold-upsell.css?v=51915886505602322711655397650" rel="stylesheet" type="text/css" media="all" />
+<link href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/bold-upsell-custom.css?v=150135899998303055901655397649" rel="stylesheet" type="text/css" media="all" /><script type="text/javascript">
+            (function e() {
+                var e = document.createElement("script");
+                e.type = "text/javascript",
+                e.async = true,
+                e.src = "//staticw2.yotpo.com/ONv5bsDUde4BUgFwPQ0haT0g50UnzbyhgzElqyXS/widget.js";
+                var t = document.getElementsByTagName("script")[0];
+                t.parentNode.insertBefore(e, t)
+            })();
+        </script>
+
+
+ 
+    <script>var HIDE_WIDGET_OUTSIDE_BUSINESS_HOURS = true;</script>
+
+
+
+<script>
+var gorgiasChatInterval = window.setInterval(function() {
+    var gorgias = document.querySelector('#chat-button')
+    var button = document.querySelector('#ContactButton')
+    if(gorgias && button){
+        $("#ContactButton").hide() 
+    }
+}, 50);
+</script>
+    
+    
+
+<script src="https://shopifyorderlimits.s3.amazonaws.com/limits/4ocean.myshopify.com?v=80a&r=20220602190333&shop=4ocean.myshopify.com"></script>
+
+
+
+
+<script src="https://cdn.shopify.com/s/files/1/0996/1022/t/903/assets/nerdy_form_widget.js?v=1655397670" defer="defer"></script>
+
+
+
+<script id="sca_fg_cart_ShowGiftAsProductTemplate" type="text/template">
+  
+  <div class="item not-sca-qv" id="sca-freegift-{{productID}}">
+    <a class="close_box" style="display: none;position: absolute;top:5px;right: 10px;font-size: 22px;font-weight: bold;cursor: pointer;text-decoration:none;color: #aaa;">×</a>
+    <a href="/products/{{productHandle}}" target="_blank"><img style="margin-left: auto; margin-right: auto; width: 50%;" class="lazyOwl" data-src="{{productImageURL}}"></a>
+    <div class="sca-product-shop">
+      <div class="review-summary3">
+        <div class="yotpo bottomLine" style="text-align:center"
+          data-product-id="{{productID}}"
+          data-product-models="{{productID}}"
+          data-name="{{productTitle}}"
+          data-url="/products/{{productHandle}}">
+        </div>
+      </div>
+      <div class="f-fix"><span class="sca-product-title" style="white-space: nowrap;color:#000;{{showfgTitle}}">{{productTitle}}</span>
+          <div id="product-variants-{{productID}}">
+            <div class="sca-price" id="price-field-{{productID}}">
+              <span class="sca-old-price">{{variant_compare_at_price}}</span>
+              <span class="sca-special-price">{{variant_price}}</span>
+            </div>
+            <div id="stay-content-sca-freegift-{{productID}}" class="sca-fg-cart-item">
+              <a class="close_box" style="display: none;position: absolute;top:5px;right: 10px;font-size: 22px;font-weight: bold;cursor: pointer;text-decoration:none;color: #aaa;">×</a>
+              <select id="product-select-{{productID}}" name="id" style="display: none">
+                {{optionVariantData}}
+              </select>
+            </div>
+          </div>
+          <button type='button' id="sca-btn-select-{{productID}}" class="sca-button" onclick="onclickSelect_{{productID}}();"><span>{{SelectButton}}</span></button>
+          <button type='button' id="sca-btn-{{productID}}" class="sca-button" style="display: none"><span>{{AddToCartButton}}</span></button>
+      </div>
+    </div>
+  </div>
+  
+</script>
+<script id = "sca_fg_cart_ShowGiftAsProductScriptTemplate" type="text/template">
+  
+  
+    var selectCallback_{{productID}}=function(t,a){if(t?(t.available?(SECOMAPP.jQuery("#sca-btn-{{productID}}").removeClass("disabled").removeAttr("disabled").html("<span>{{AddToCartButton}}</span>").fadeTo(200,1),SECOMAPP.jQuery("#sca-btn-{{productID}}").unbind("click"),SECOMAPP.jQuery("#sca-btn-{{productID}}").click(SECOMAPP.jQuery.proxy(function(){SECOMAPP.addGiftToCart(t.id,1)},t))):SECOMAPP.jQuery("#sca-btn-{{productID}}").html("<span>{{UnavailableButton}}</span>").addClass("disabled").attr("disabled","disabled").fadeTo(200,.5),t.compare_at_price>t.price?SECOMAPP.jQuery("#price-field-{{productID}}").html("<span class='sca-old-price'>"+SECOMAPP.formatMoney(t.compare_at_price)+"</span>&nbsp;<s class='sca-special-price'>"+SECOMAPP.formatMoney(t.price)+"</s>"):SECOMAPP.jQuery("#price-field-{{productID}}").html("<span class='sca-special-price'>"+SECOMAPP.formatMoney(t.price)+"</span>")):SECOMAPP.jQuery("#sca-btn-{{productID}}").html("<span>{{UnavailableButton}}</span>").addClass("disabled").attr("disabled","disabled").fadeTo(200,.5),t&&t.featured_image){var e=SECOMAPP.jQuery("#sca-freegift-{{productID}} img"),_=t.featured_image,c=e[0];Shopify.Image.switchImage(_,c,function(t,a,e){SECOMAPP.jQuery(e).parents("a").attr("href",t),SECOMAPP.jQuery(e).attr("src",t)})}},onclickSelect_{{productID}}=function(t){SECOMAPP.jQuery.getJSON("/products/{{productHandle}}.js",{_:(new Date).getTime()},function(t){SECOMAPP.jQuery(".owl-item #sca-freegift-{{productID}} span.sca-product-title").html(t.title);var e=[];SECOMAPP.jQuery.each(t.options,function(t,a){e[t]=a.name}),t.options=e;for(var a={{variantsGiftList}},_={{mainVariantsList}},c=t.variants.length-1;-1<c;c--)a.indexOf(t.variants[c].id)<0&&_.indexOf(t.variants[c].id)<0&&t.variants.splice(c,1);for(var o=_.length-1;-1<o;o--){var i=a[o],r=_[o],n=-1,s=-1;for(c=t.variants.length-1;-1<c;c--)t.variants[c].id==i?n=c:t.variants[c].id==r&&(s=c);-1<n&&-1<s&n!==s?("undefined"!=typeof SECOMAPP&&void 0!==SECOMAPP.fgsettings&&!0===SECOMAPP.fgsettings.sca_sync_gift&&void 0!==SECOMAPP.fgsettings.sca_fg_gift_variant_quantity_format&&"equal_original_inventory"===SECOMAPP.fgsettings.sca_fg_gift_variant_quantity_format&&(t.variants[n].available=t.variants[s].available,t.variants[n].inventory_management=t.variants[s].inventory_management),t.variants[n].option1=t.variants[s].option1,t.variants[n].options[0].name=t.variants[s].options[0].name,t.variants[n].options[1]&&(t.variants[n].options[1].name=t.variants[s].options[1].name,t.variants[n].option2=t.variants[s].option2),t.variants[n].options[2]&&(t.variants[n].options[2].name=t.variants[s].options[2].name,t.variants[n].option3=t.variants[s].option3),t.variants[n].title=t.variants[s].title,t.variants[n].name=t.variants[s].name,t.variants[n].public_title=t.variants[s].public_title,t.variants.splice(s,1)):(t.variants[s].id=i,t.variants[s].compare_at_price||(t.variants[s].compare_at_price=t.variants[s].price),t.variants[s].price=SECOMAPP.fgdata.giftid_price_mapping[i])}SECOMAPP.jQuery("#sca-btn-select-{{productID}}").hide(),SECOMAPP.jQuery("#product-select-{{productID}}").show(),SECOMAPP.jQuery("#sca-btn-{{productID}}").show(),SECOMAPP.jQuery("#stay-content-sca-freegift-{{productID}} .close_box").show(),SECOMAPP.jQuery("#stay-content-sca-freegift-{{productID}} .close_box").click(function(){SECOMAPP.jQuery("#stay-content-sca-freegift-{{productID}}").hide(),SECOMAPP.jQuery("#sca-btn-{{productID}}").hide(),SECOMAPP.jQuery("#sca-btn-select-{{productID}}").show()}),onclickSelect_{{productID}}=function(){SECOMAPP.jQuery("#stay-content-sca-freegift-{{productID}}").show(),SECOMAPP.jQuery("#sca-btn-{{productID}}").show(),SECOMAPP.jQuery("#sca-btn-select-{{productID}}").hide()},1==t.variants.length?(-1!==t.variants[0].title.indexOf("Default")&&SECOMAPP.jQuery("#sca-freegift-{{productID}} .selector-wrapper").hide(),1==t.variants[0].available&&(SECOMAPP.jQuery("#sca-btn-{{productID}}").show(),SECOMAPP.jQuery("#sca-btn-select-{{productID}}").hide(),SECOMAPP.jQuery("#sca-btn-{{productID}}").removeClass("disabled").removeAttr("disabled").html("<span>{{AddToCartButton}}</span>").fadeTo(200,1),SECOMAPP.jQuery("#sca-btn-{{productID}}").unbind("click"),SECOMAPP.jQuery("#sca-btn-{{productID}}").click(SECOMAPP.jQuery.proxy(function(){SECOMAPP.addGiftToCart(t.variants[0].id,1)},t)))):(new Shopify.OptionSelectors("product-select-{{productID}}",{product:t,onVariantSelected:selectCallback_{{productID}},enableHistoryState:!0}),SECOMAPP.jQuery("#stay-content-sca-freegift-{{productID}}").show(),SECOMAPP.jQuery("#stay-content-sca-freegift-{{productID}}").focus())})};1=={{variantsGiftList}}.length&&onclickSelect_{{productID}}();
+  
+</script>
+
+<script id="sca_fg_cart_ShowGiftAsVariantTemplate" type="text/template">
+  
+  <div class="item not-sca-qv" id="sca-freegift-{{variantID}}">
+    <a href="/products/{{productHandle}}?variant={{originalVariantID}}" target="_blank"><img style="margin-left: auto; margin-right: auto; width: 50%;" class="lazyOwl" data-src="{{variantImageURL}}"></a>
+    <div class="sca-product-shop">
+      <div class="review-summary3">
+        <div class="yotpo bottomLine" style="text-align:center"
+          data-product-id="{{productID}}"
+          data-product-models="{{productID}}"
+          data-name="{{productTitle}}"
+          data-url="/products/{{productHandle}}">
+        </div>
+      </div>
+      <div class="f-fix">
+        <span class="sca-product-title" style="white-space: nowrap;color:#000;">{{variantTitle}}</span>
+        <div class="sca-price">
+          <span class="sca-old-price">{{variant_compare_at_price}}</span>
+          <span class="sca-special-price">{{variant_price}}</span>
+        </div>
+        <button type="button" id="sca-btn{{variantID}}" class="sca-button" onclick="SECOMAPP.addGiftToCart({{variantID}},1);">
+          <span>{{AddToCartButton}}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+</script>
+
+<script id="sca_fg_prod_GiftList" type="text/template">
+  
+  <a style="text-decoration: none !important" id ="{{giftShowID}}" class="product-image freegif-product-image freegift-info-{{giftShowID}}"
+     title="{{giftTitle}}" href="/products/{{productsHandle}}">
+    <img class="not-sca-qv" src="{{giftImgUrl}}" alt="{{giftTitle}}" />
+  </a>
+  
+</script>
+
+<script id="sca_fg_prod_Gift_PopupDetail" type="text/template">
+  
+  <div class="sca-fg-item fg-info-{{giftShowID}}" style="display:none;z-index:2147483647;">
+    <div class="sca-fg-item-options">
+      <div class="sca-fg-item-option-title">
+        <em>{{freegiftRuleName}}</em>
+      </div>
+      <div class="sca-fg-item-option-ct">
+        <!--        <div class="sca-fg-image-item">
+                        <img src="{{giftImgUrl}}" /> -->
+        <div class="sca-fg-item-name">
+          <a href="#">{{giftTitle}}</a>
+        </div>
+        <!--        </div> -->
+      </div>
+    </div>
+  </div>
+  
+</script>
+
+<script id="sca_fg_ajax_GiftListPopup" type="text/template">
+  
+  <div id="freegift_popup" class="mfp-hide">
+    <div id="sca-fg-owl-carousel">
+      <div id="freegift_cart_container" class="sca-fg-cart-container" style="display: none;">
+        <div id="freegift_message" class="owl-carousel"></div>
+      </div>
+      <div id="sca-fg-slider-cart" style="display: none;">
+        <div class="sca-fg-cart-title">
+          <strong>{{popupTitle}}</strong>
+        </div>
+        <div id="sca_freegift_list" class="owl-carousel"></div>
+      </div>
+    </div>
+  </div>
+  
+</script>
+
+<script id="sca_fg_checkout_confirm_popup" type="text/template">
+    
+         <div class='sca-fg-checkout-confirm-popup' style='font-family: "Myriad","Cardo","Big Caslon","Bodoni MT",Georgia,serif; position: relative;background: #FFF;padding: 20px 20px 50px 20px;width: auto;max-width: 500px;margin: 20px auto;'>
+             <h1 style='font-family: "Oswald","Cardo","Big Caslon","Bodoni MT",Georgia,serif;'>YOU CAN STILL ADD MORE!</h1>
+             <p>You get 1 free item with every product purchased. It looks like you can still add more free item(s) to your cart. What would you like to do?</p>
+             <p class='sca-fg-checkout-confirm-buttons' style='float: right;'>
+                 <a class='btn popup-modal-dismiss action_button add_to_cart' href='#' style='width: 200px !important;margin-right: 20px;'>ADD MORE</a>
+                 <a class='btn checkout__button continue-checkout action_button add_to_cart' href='/checkout' style='width: 200px !important;'>CHECKOUT</a>
+             </p>
+         </div>
+    
+</script>
+
+
+
+<link href="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/sca.freegift.css?v=43694233310401270911655397683" rel="stylesheet" type="text/css" media="all" />
+<script src="//cdn.shopify.com/shopifycloud/shopify/assets/themes_support/option_selection-fe6b72c2bbdd3369ac0bfefe8648e3c889efca213baefd4cfb0dd9363563831f.js" type="text/javascript"></script>
+<script data-cfasync="false">
+    Shopify.money_format = "\u003cspan class=money\u003e${{amount}}\u003c\/span\u003e";
+    //enable checking free gifts condition when checkout clicked
+    if ((typeof SECOMAPP) === 'undefined') { window.SECOMAPP = {}; };
+    SECOMAPP.enableOverrideCheckout = true;
+    SECOMAPP.add_offer_names_above_gift_list = true;
+    //    SECOMAPP.preStopAppCallback = function(cart){
+    //        if(typeof yotpo!=='undefined' && typeof yotpo.initWidgets==='function'){
+    //            yotpo.initWidgets();
+    //        }
+    //    }
+</script>
+<script data-cfasync="false" type="text/javascript">
+  /* Smart Ecommerce App (SEA Inc)
+  * https://www.secomapp.com
+  * Do not reuse those source codes if don't have permission of us.
+  * */
+  
+  
+  !function(){Array.isArray||(Array.isArray=function(e){return"[object Array]"===Object.prototype.toString.call(e)}),"function"!=typeof Object.create&&(Object.create=function(e){function t(){}return t.prototype=e,new t}),Object.keys||(Object.keys=function(e){var t,o=[];for(t in e)Object.prototype.hasOwnProperty.call(e,t)&&o.push(t);return o}),String.prototype.endsWith||Object.defineProperty(String.prototype,"endsWith",{value:function(e,t){var o=this.toString();(void 0===t||t>o.length)&&(t=o.length),t-=e.length;var r=o.indexOf(e,t);return-1!==r&&r===t},writable:!0,enumerable:!0,configurable:!0}),Array.prototype.indexOf||(Array.prototype.indexOf=function(e,t){var o;if(null==this)throw new TypeError('"this" is null or not defined');var r=Object(this),i=r.length>>>0;if(0===i)return-1;var n=+t||0;if(Math.abs(n)===1/0&&(n=0),n>=i)return-1;for(o=Math.max(n>=0?n:i-Math.abs(n),0);o<i;){if(o in r&&r[o]===e)return o;o++}return-1}),Array.prototype.forEach||(Array.prototype.forEach=function(e,t){var o,r;if(null==this)throw new TypeError(" this is null or not defined");var i=Object(this),n=i.length>>>0;if("function"!=typeof e)throw new TypeError(e+" is not a function");for(arguments.length>1&&(o=t),r=0;r<n;){var a;r in i&&(a=i[r],e.call(o,a,r,i)),r++}}),console=console||{},console.log=console.log||function(){},"undefined"==typeof Shopify&&(Shopify={}),"function"!=typeof Shopify.onError&&(Shopify.onError=function(){}),"undefined"==typeof SECOMAPP&&(SECOMAPP={}),SECOMAPP.removeGiftsVariant=function(e){setTimeout(function(){try{e("select option").not(".sca-fg-cart-item select option").filter(function(){var t=e(this).val(),o=e(this).text();-1!==o.indexOf(" - ")&&(o=o.slice(0,o.indexOf(" - ")));var r=[];return-1!==o.indexOf(" / ")&&(r=o.split(" / "),o=r[r.length-1]),!!(void 0!==SECOMAPP.gifts_list_avai&&void 0!==SECOMAPP.gifts_list_avai[t]||o.endsWith("% off)"))&&(e(this).parent("select").find("option").not(".sca-fg-cart-item select option").filter(function(){var r=e(this).val();return e(this).text().endsWith(o)||r==t}).remove(),e(".dropdown *,ul li,label,div").filter(function(){var r=e(this).html(),i=e(this).data("value");return r&&r.endsWith(o)||i==t}).remove(),!0)})}catch(e){console.log(e)}},500)},SECOMAPP.formatMoney=function(e,t){"string"==typeof e&&(e=e.replace(".",""));var o="",r="undefined"!=typeof Shopify&&void 0!==Shopify.money_format?Shopify.money_format:"{{amount}}",i=/\{\{\s*(\w+)\s*\}\}/,n=t||(void 0!==this.fgsettings&&"string"==typeof this.fgsettings.sca_currency_format&&this.fgsettings.sca_currency_format.indexOf("amount")>-1?this.fgsettings.sca_currency_format:null)||r;if(n.indexOf("amount_no_decimals_no_comma_separator")<0&&n.indexOf("amount_no_comma_separator_up_cents")<0&&n.indexOf("amount_up_cents")<0&&"function"==typeof Shopify.formatMoney)return Shopify.formatMoney(e,n);function a(e,t){return void 0===e?t:e}function s(e,t,o,r,i,n){if(t=a(t,2),o=a(o,","),r=a(r,"."),isNaN(e)||null==e)return 0;var s=(e=(e/100).toFixed(t)).split(".");return s[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g,"$1"+o)+(s[1]?i&&n?i+s[1]+n:r+s[1]:"")}switch(n.match(i)[1]){case"amount":o=s(e,2);break;case"amount_no_decimals":o=s(e,0);break;case"amount_with_comma_separator":o=s(e,2,",",".");break;case"amount_no_decimals_with_comma_separator":o=s(e,0,",",".");break;case"amount_no_decimals_no_comma_separator":o=s(e,0,"","");break;case"amount_up_cents":o=s(e,2,",","","<sup>","</sup>");break;case"amount_no_comma_separator_up_cents":o=s(e,2,"","","<sup>","</sup>")}return n.replace(i,o)},SECOMAPP.setCookie=function(e,t,o,r,i){var n=new Date;n.setTime(n.getTime()+24*o*60*60*1e3+60*r*1e3);var a="expires="+n.toUTCString();document.cookie=e+"="+t+";"+a+(i?";path="+i:";path=/")},SECOMAPP.deleteCookie=function(e,t){document.cookie=e+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; "+(t?";path="+t:";path=/")},SECOMAPP.getCookie=function(e){for(var t=e+"=",o=document.cookie.split(";"),r=0;r<o.length;r++){for(var i=o[r];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(t))return i.substring(t.length,i.length)}return""},SECOMAPP.getQueryString=function(){for(var e={},t=window.location.search.substring(1).split("&"),o=0;o<t.length;o++){var r=t[o].split("=");if(void 0===e[r[0]])e[r[0]]=decodeURIComponent(r[1]);else if("string"==typeof e[r[0]]){var i=[e[r[0]],decodeURIComponent(r[1])];e[r[0]]=i}else e[r[0]].push(decodeURIComponent(r[1]))}return e},SECOMAPP.freegifts_product_json=function(e){if(Array.isArray||(Array.isArray=function(e){return"[object Array]"===Object.prototype.toString.call(e)}),String.prototype.endsWith||Object.defineProperty(String.prototype,"endsWith",{value:function(e,t){var o=this.toString();(void 0===t||t>o.length)&&(t=o.length),t-=e.length;var r=o.indexOf(e,t);return-1!==r&&r===t}}),e){if(e.options&&Array.isArray(e.options))for(var t=0;t<e.options.length;t++){if(void 0!==e.options[t]&&void 0!==e.options[t].values)if((r=e.options[t]).values&&Array.isArray(r.values))for(var o=0;o<r.values.length;o++)(r.values[o].endsWith("(Freegifts)")||r.values[o].endsWith("% off)"))&&(r.values.splice(o,1),o--)}if(e.options_with_values&&Array.isArray(e.options_with_values))for(t=0;t<e.options_with_values.length;t++){var r;if(void 0!==e.options_with_values[t]&&void 0!==e.options_with_values[t].values)if((r=e.options_with_values[t]).values&&Array.isArray(r.values))for(o=0;o<r.values.length;o++)(r.values[o].title.endsWith("(Freegifts)")||r.values[o].title.endsWith("% off)"))&&(r.values.splice(o,1),o--)}var i=e.price,n=e.price_max,a=e.price_min,s=e.compare_at_price,c=e.compare_at_price_max,f=e.compare_at_price_min;if(e.variants&&Array.isArray(e.variants))for(var p=0;e.variants.length,void 0!==e.variants[p];p++){var l=e.variants[p],u=l.option3?l.option3:l.option2?l.option2:l.option1?l.option1:l.title?l.title:"";"undefined"!=typeof SECOMAPP&&void 0!==SECOMAPP.gifts_list_avai&&void 0!==SECOMAPP.gifts_list_avai[l.id]||u.endsWith("(Freegifts)")||u.endsWith("% off)")?(e.variants.splice(p,1),p-=1):((!n||n>=l.price)&&(n=l.price,i=l.price),(!a||a<=l.price)&&(a=l.price),l.compare_at_price&&((!c||c>=l.compare_at_price)&&(c=l.compare_at_price,s=l.compare_at_price),(!f||f<=l.compare_at_price)&&(f=l.compare_at_price)),void 0!==l.available&&1==l.available&&(e.available=!0))}e.price=i,e.price_max=a==n?null:a,e.price_min=n==a?null:n,e.compare_at_price=s,e.compare_at_price_max=f,e.compare_at_price_min=c,e.price_varies=n<a,e.compare_at_price_varies=c<f}return e},SECOMAPP.fg_codes=[],""!==SECOMAPP.getCookie("sca_fg_codes")&&(SECOMAPP.fg_codes=JSON.parse(SECOMAPP.getCookie("sca_fg_codes")));var e=SECOMAPP.getQueryString();e.freegifts_code&&-1===SECOMAPP.fg_codes.indexOf(e.freegifts_code)&&(void 0!==SECOMAPP.activateOnlyOnePromoCode&&!0===SECOMAPP.activateOnlyOnePromoCode&&(SECOMAPP.fg_codes=[]),SECOMAPP.fg_codes.push(e.freegifts_code),SECOMAPP.setCookie("sca_fg_codes",JSON.stringify(SECOMAPP.fg_codes)))}();
+  
+  ;SECOMAPP.customer={};SECOMAPP.customer.orders=[];SECOMAPP.customer.freegifts=[];;SECOMAPP.customer.email=null;SECOMAPP.customer.first_name=null;SECOMAPP.customer.last_name=null;SECOMAPP.customer.tags=null;SECOMAPP.customer.orders_count=null;SECOMAPP.customer.total_spent=null;
+</script>
+
+
+                        <script id="otRegion" type="text/javascript">
+  document.addEventListener('DOMContentLoaded', (event) => {
+      otRegionShop = Shopify.shop;
+      let otRegionRootLink =
+          "https://apps.synctrack.io/region-restrictions";
+      let otRegionBody = document.querySelector("body");
+      let otRegionHead = document.querySelector("head");
+      let otRegionContent = document.createElement("div");
+      let otRegionDomBlockIP = localStorage.getItem("otRegionDomBlockIP");
+      let otRegionAutoBlock = localStorage.getItem("otRegionAutoBlock");
+      let otRegionTypeBlock = localStorage.getItem("otRegionTypeBlock");
+      let otRegionDomBlockCollection = JSON.parse(
+          localStorage.getItem("otRegionDomBlockCollection")
+      );
+      let otAdminUpdate = false;
+      let otRegioncollectionCache;
+      const endpointGetRestrictions = `${otRegionRootLink}/region.php?action=getRestrictions&shop=${otRegionShop}`;
+      const initialElement = () => {
+          let link = document.createElement("link");
+          link.type = "text/css";
+          link.rel = "stylesheet";
+          link.href = `${otRegionRootLink}/assets/css/region.css`;
+          otRegionContent.classList.add("ot-redirect");
+          otRegionHead.appendChild(link);
+          otRegionBody.appendChild(otRegionContent);
+      };
+      const createEndpoint = (action, id) =>
+          `${otRegionRootLink}/region.php?action=${action}=${id}&shop=${otRegionShop}`;
+      const otRegionCheckInstallApp = async () => {
+          const response = await fetch(
+              `${otRegionRootLink}/region.php?action=checkInstallApp&shop=${otRegionShop}`
+          );
+          const data = await response.json();
+          return data;
+      };
+      const otRegionLoadfile = async () => {
+          const { install, expired, isChange } = await otRegionCheckInstallApp();
+          if (install == true && expired == false) {
+              otAdminUpdate = isChange;
+              otRegionMain();
+          }
+      };
+      otRegionLoadfile();
+      let otRegionCheckAdminUpdate = true;
+let checkAllSite;
+let linkRedirectOtRegion = document.createElement('meta');
+linkRedirectOtRegion.setAttribute('http-equiv', 'refresh');
+
+const changeDom = (data, page, id) => {
+  localStorage.setItem('otRegionAutoBlock', data.autoBlock);
+  localStorage.setItem('otRegionTypeBlock', data.typeBlock);
+  let res = regexScriptTag(data.html);
+  data.html.startsWith('linkHref=')
+    ? addMetaRedirect(
+        data.html.slice(data.html.indexOf('=') + 1, data.html.length)
+      )
+    : otInitialElement(res);
+  if (page == 'home') {
+    localStorage.setItem('otRegionDomBlockIP', data.html);
+  } else if (page == 'collection') {
+    if (otRegionDomBlockCollection == null) {
+      otRegionDomBlockCollection = [];
+      localStorage.setItem(
+        'otRegionDomBlockCollection',
+        JSON.stringify([{ value: data.html, idCollection: id }])
+      );
+    } else {
+      if (
+        otRegionDomBlockCollection.find((item) => item.id == id) !== undefined
+      ) {
+        const newCollection = otRegionDomBlockCollection.map((item) =>
+          item.id == id ? { value: data.html, idCollection: id } : item
+        );
+        localStorage.setItem(
+          'otRegionDomBlockCollection',
+          JSON.stringify(newCollection)
+        );
+      } else {
+        localStorage.setItem(
+          'otRegionDomBlockCollection',
+          JSON.stringify([
+            ...otRegionDomBlockCollection,
+            { value: data.html, idCollection: id },
+          ])
+        );
+      }
+    }
+  }
+};
+
+const handleDomCache = (data) => {
+  handleIpCandidateDynamic(data);
+  if (data !== '') {
+    fetch(
+      `${otRegionRootLink}/region.php?action=updateStatistic&shop=${otRegionShop}`
+    );
+  }
+};
+
+const handleIpCandidate = () => {
+  // Handle optimize perform
+  // Construct a new RTCPeerConnection
+  let pc = new RTCPeerConnection({});
+  let candidates = [];
+  //  listen for candidate events
+  pc.onicecandidate = (e) => {
+    if (!e.candidate) {
+      return;
+    }
+    candidates.push(
+      convertCandidateOutput(e.candidate.candidate.split(' ')[0])
+    );
+    localStorage.setItem(
+      'otRegionIpcandidate',
+      JSON.stringify([{ ipCandidate: candidates[0] }])
+    );
+  };
+
+  pc.createDataChannel('');
+  pc.createOffer().then((offer) => pc.setLocalDescription(offer));
+};
+
+const checkResPonseBlockAllSite = (data) => (data == '' ? true : false);
+
+function fetchApiHandleDom(url, page, id) {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      data.typeBlock == '1' && localStorage.setItem('otRegionIp', data.ipFirst);
+      handleIpCandidate();
+      checkAllSite =
+        page === 'home' ? checkResPonseBlockAllSite(data.html) : true;
+      changeDom(data, page, id);
+    });
+}
+
+const checkCollectionInBlock = (id, dom) => {
+  if (dom === null) {
+    return true;
+  } else {
+    let collectionBlock = dom.filter((item) => item.idCollection == id);
+    if (collectionBlock.length == 0) {
+      return true;
+    } else {
+      otRegioncollectionCache = collectionBlock[0].value;
+      return false;
+    }
+  }
+};
+
+const regionInit = async () => {
+  let keysToRemove = [
+    'otRegionDomBlockIP',
+    'otRegionDomBlockCollection',
+    'otRegionIpcandidate',
+    'otRegionAutoBlock',
+    'otRegionTypeBlock',
+    'otRegionIp',
+  ];
+  keysToRemove.forEach((k) => localStorage.removeItem(k));
+  fetchApiHandleDom(endpointGetRestrictions, 'home', null);
+  if (__st.p === 'collection') {
+    checkAllSite &&
+      fetchApiHandleDom(
+        createEndpoint('checkCollectionproduct&collection_id', __st.rid),
+        'collection',
+        __st.rid
+      );
+  }
+  if (__st.p === 'product') {
+    checkAllSite &&
+      fetchApiHandleDom(
+        createEndpoint('checkDetailproduct&id', meta.product.id),
+        'product',
+        null
+      );
+  }
+};
+
+const otRegionMain = () => {
+  handleBlockContent();
+  if (otAdminUpdate) {
+    regionInit();
+  } else {
+    let otRegionIpcandidate = localStorage.getItem('otRegionIpcandidate');
+    if (otRegionIpcandidate !== null && otRegionDomBlockIP !== null) {
+      handleDomCache(otRegionDomBlockIP);
+      if (__st.p === 'collection') {
+        if (otRegionDomBlockIP === '') {
+          checkCollectionInBlock(__st.rid, otRegionDomBlockCollection)
+            ? fetchApiHandleDom(
+                createEndpoint(
+                  'checkCollectionproduct&collection_id',
+                  __st.rid
+                ),
+                'collection',
+                __st.rid
+              )
+            : handleDomCache(otRegioncollectionCache);
+        }
+      }
+      if (__st.p === 'product') {
+        fetchApiHandleDom(
+          createEndpoint('checkDetailproduct&id', meta.product.id),
+          'product',
+          null
+        );
+      }
+    } else {
+      regionInit();
+    }
+  }
+};
+
+// helper
+
+function handleBlockContent() {
+  const oTBlockContent = otFetchApiBlockContent(
+    `${otRegionRootLink}/region.php?action=blockContent&shop=${otRegionShop}`
+  );
+  oTBlockContent.then((data) => {
+    const isBlockContent = data.block_content == '1';
+    const isBlockPhoto = data.block_photo == '1';
+
+    document.addEventListener('copy', function (e) {
+      if (isBlockContent) {
+        e.preventDefault();
+        e.clipboardData.setData(
+          'text/plain',
+          "Do not copy this site's content!"
+        );
+      }
+    });
+
+    document.addEventListener('cut', function (e) {
+      if (isBlockContent) {
+        e.preventDefault();
+        e.clipboardData.setData(
+          'text/plain',
+          "Do not cut this site's content!"
+        );
+      }
+    });
+
+    document.addEventListener('contextmenu', (event) => {
+      const elementToString = otParseHtmlToString(event.target);
+      const isImg = oTGetImages(elementToString.length);
+      if (isBlockPhoto) {
+        if (isImg) {
+          event.preventDefault();
+        }
+      }
+
+      // if (isBlockContent) {
+      //   event.preventDefault();
+      // }
+    });
+
+    document.onkeydown = (e) => {
+      if (isBlockContent || isBlockPhoto) {
+        if (
+          e.keyCode === 123 ||
+          ctrlShiftKey(e, 'I') ||
+          ctrlShiftKey(e, 'J') ||
+          ctrlShiftKey(e, 'C') ||
+          (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+        )
+          return false;
+      }
+    };
+  });
+
+  function otParseHtmlToString(element) {
+    return element.outerHTML;
+  }
+
+  function oTGetImages(string) {
+    const imgRex = /<img.*?src="(.*?)"[^>]+>/g;
+    const images = [];
+    let img;
+    while ((img = imgRex.exec(string))) {
+      images.push(img[1]);
+    }
+    return images;
+  }
+
+  async function otFetchApiBlockContent(url) {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  }
+}
+
+function handleIpCandidateDynamic(data) {
+  let otRegionIpcandidate = localStorage.getItem('otRegionIpcandidate');
+  let otRegionIp = localStorage.getItem('otRegionIp');
+  let otRegionTypeBlock = localStorage.getItem('otRegionTypeBlock');
+  let otRegionAutoBlock = localStorage.getItem('otRegionAutoBlock');
+
+  let arrayIP = JSON.parse(otRegionIpcandidate);
+  // Handle optimize perform
+  // Construct a new RTCPeerConnection
+  let pc = new RTCPeerConnection({});
+  let candidates = [];
+
+  //  listen for candidate events
+  pc.onicecandidate = (e) => {
+    if (!e.candidate) {
+      return;
+    }
+    candidates.push(
+      convertCandidateOutput(e.candidate.candidate.split(' ')[0])
+    );
+    if (otRegionAutoBlock == '1' && otRegionTypeBlock == '1') {
+      if (data !== '') {
+        renderDomCache(data);
+        if (!checkIpCandidateInArr(arrayIP, candidates[0])) {
+          let newArrIp = [...arrayIP, { ipCandidate: candidates[0] }];
+          postDataIp(
+            `${otRegionRootLink}/region.php?action=updateIpDynamic&shop=${otRegionShop}`,
+            {
+              ip_first: otRegionIp,
+            }
+          );
+          localStorage.setItem('otRegionIpcandidate', JSON.stringify(newArrIp));
+        }
+      } else {
+        !checkIpCandidateInArr(arrayIP, candidates[0])
+          ? regionInit()
+          : renderDomCache(data);
+      }
+    } else {
+      !checkIpCandidateInArr(arrayIP, candidates[0]) && otRegionTypeBlock == '1'
+        ? regionInit()
+        : renderDomCache(data);
+    }
+  };
+
+  pc.createDataChannel('');
+  pc.createOffer().then((offer) => pc.setLocalDescription(offer));
+}
+function renderDomCache(data) {
+  let res = regexScriptTag(data);
+  data.startsWith('linkHref=')
+    ? addMetaRedirect(data.slice(data.indexOf('=') + 1, data.length))
+    : otInitialElement(res);
+}
+
+function convertCandidateOutput(candidate) {
+  return candidate.slice(candidate.indexOf(':') + 1, candidate.length);
+}
+
+function checkIpCandidateInArr(arrayIP, candidate) {
+  return arrayIP.some(
+    (item) => item.ipCandidate == convertCandidateOutput(candidate)
+  );
+}
+
+async function postDataIp(url = '', data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: 'POST',
+    mode: 'cors',
+    cache: 'no-cache',
+    credentials: 'same-origin',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  return response; // parses JSON response into native JavaScript objects
+}
+
+function regexScriptTag(data) {
+  let startScript = /<script\b[^>]*>/gm;
+  let endScript = /<\/script>/gm;
+  let res = data
+    .replaceAll(startScript, '&lt;script&gt;')
+    .replaceAll(endScript, '&lt;/script&gt;');
+  return res;
+}
+
+function addMetaRedirect(linkRedirect) {
+  linkRedirectOtRegion.setAttribute('http-equiv', 'refresh');
+  linkRedirectOtRegion.setAttribute('content', `0; url=${linkRedirect}`);
+  document.getElementsByTagName('head')[0].appendChild(linkRedirectOtRegion);
+}
+
+function otInitialElement(res) {
+  let d = new Date();
+  let ver = d.getTime();
+  let otRegionBody = document.querySelector('body');
+  let otRegionHead = document.querySelector('head');
+  let otRegionContent = document.createElement('div');
+  let link = document.createElement('link');
+  link.type = 'text/css';
+  link.rel = 'stylesheet';
+  link.href = `${otRegionRootLink}/assets/css/region.css?v=${ver}`;
+  otRegionContent.classList.add('ot-redirect');
+  otRegionHead.appendChild(link);
+  otRegionBody.appendChild(otRegionContent);
+  otRegionContent.innerHTML = res;
+  res !== '' && otRegionBody.classList.add('stopScrolling');
+}
+
+  });
+</script>            
+                        <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0996/1022/files/ocean-logo_e9f2c0bb-8e0b-4c87-a7c2-f1b9ece064fd.png?v=1631199303" />
+<meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0996/1022/files/ocean-logo_e9f2c0bb-8e0b-4c87-a7c2-f1b9ece064fd.png?v=1631199303" />
+<meta property="og:image:width" content="207" />
+<meta property="og:image:height" content="72" />
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 9961022,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "customers/login"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'USD';
+var meta = {"page":{}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(function () {
+  var customDocumentWrite = function(content) {
+    var jquery = null;
+
+    if (window.jQuery) {
+      jquery = window.jQuery;
+    } else if (window.Checkout && window.Checkout.$) {
+      jquery = window.Checkout.$;
+    }
+
+    if (jquery) {
+      jquery('body').append(content);
+    }
+  };
+
+  var hasLoggedConversion = function(token) {
+    if (token) {
+      return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+    }
+    return false;
+  }
+
+  var setCookieIfConversion = function(token) {
+    if (token) {
+      var twoMonthsFromNow = new Date(Date.now());
+      twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+      document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+    }
+  }
+
+  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+  if (trekkie.integrations) {
+    return;
+  }
+  trekkie.methods = [
+    'identify',
+    'page',
+    'ready',
+    'track',
+    'trackForm',
+    'trackLink'
+  ];
+  trekkie.factory = function(method) {
+    return function() {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift(method);
+      trekkie.push(args);
+      return trekkie;
+    };
+  };
+  for (var i = 0; i < trekkie.methods.length; i++) {
+    var key = trekkie.methods[i];
+    trekkie[key] = trekkie.factory(key);
+  }
+  trekkie.load = function(config) {
+    trekkie.config = config || {};
+    trekkie.config.initialDocumentCookie = document.cookie;
+    var first = document.getElementsByTagName('script')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.onerror = function(e) {
+      var scriptFallback = document.createElement('script');
+      scriptFallback.type = 'text/javascript';
+      scriptFallback.onerror = function(error) {
+              var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+    
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+    
+        } // XHR beacon   
+    
+        var xhr = new XMLHttpRequest();
+    
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+    
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 9961022,
+      theme_id: 130464678081,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "https://cdn.shopify.com/s/trekkie.storefront.1d937de3ab351f3a21d472769f20c0ea72d77fae.min.js"});
+
+      };
+      scriptFallback.async = true;
+      scriptFallback.src = 'https://cdn.shopify.com/s/trekkie.storefront.1d937de3ab351f3a21d472769f20c0ea72d77fae.min.js';
+      first.parentNode.insertBefore(scriptFallback, first);
+    };
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/trekkie.storefront.1d937de3ab351f3a21d472769f20c0ea72d77fae.min.js';
+    first.parentNode.insertBefore(script, first);
+  };
+  trekkie.load(
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":9961022,"isMerchantRequest":null,"themeId":130464678081,"themeCityHash":"569422617594854601","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true},"Facebook Pixel":{"pixelIds":["1251738474892847"],"agent":"plshopify1.2"},"Snap Pixel":{"pixelId":"6b1ebd87-3fc5-43f0-8d79-ccb7446f0866"},"TikTok Pixel":{"pixelId":"CABAAARC77U0LHECHHD0"},"Google Gtag Pixel":{"conversionId":"AW-863424298","eventLabels":[{"type":"page_view","action_label":"AW-863424298\/OJRLCKPj6vMBEKqe25sD"},{"type":"purchase","action_label":"AW-863424298\/Ghz9CKbj6vMBEKqe25sD"},{"type":"view_item","action_label":"AW-863424298\/wXGJCKnj6vMBEKqe25sD"},{"type":"add_to_cart","action_label":"AW-863424298\/zeqjCKzj6vMBEKqe25sD"},{"type":"begin_checkout","action_label":"AW-863424298\/-nyICK_j6vMBEKqe25sD"},{"type":"search","action_label":"AW-863424298\/dmoeCLLj6vMBEKqe25sD"},{"type":"add_payment_info","action_label":"AW-863424298\/O9SzCLXj6vMBEKqe25sD"}],"targetCountry":"US"},"Session Attribution":{},"S2S":{"emitV4CheckoutEvent":true,"facebookCapiEnabled":true,"facebookAppPixelId":"1251738474892847","source":"trekkie-storefront-renderer"}}
+  );
+
+  var loaded = false;
+  trekkie.ready(function() {
+    if (loaded) return;
+    loaded = true;
+
+    window.ShopifyAnalytics.lib = window.trekkie;
+    
+
+    var originalDocumentWrite = document.write;
+    document.write = customDocumentWrite;
+    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+    document.write = originalDocumentWrite;
+
+    window.ShopifyAnalytics.lib.page(null,{});
+
+    var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+    var token = match? match[1]: undefined;
+    if (!hasLoggedConversion(token)) {
+      setCookieIfConversion(token);
+      
+    }
+  });
+
+  
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/shopifycloud/shopify/assets/shop_events_listener-fa61fd11817b231631d2fe43dc869d0b1d14a06332792d42f1a1d94bda5aa31e.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+})();</script>
+<script class="boomerang">
+(function () {
+  if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+    return;
+  }
+  window.BOOMR = window.BOOMR || {};
+  window.BOOMR.snippetStart = new Date().getTime();
+  window.BOOMR.snippetExecuted = true;
+  window.BOOMR.snippetVersion = 12;
+  window.BOOMR.application = "storefront-renderer";
+  window.BOOMR.themeName = "Starter theme";
+  window.BOOMR.themeVersion = "1.0.0";
+  window.BOOMR.shopId = 9961022;
+  window.BOOMR.themeId = 130464678081;
+  window.BOOMR.url =
+    "https://cdn.shopify.com/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+  var where = document.currentScript || document.getElementsByTagName("script")[0];
+  var parentNode = where.parentNode;
+  var promoted = false;
+  var LOADER_TIMEOUT = 3000;
+  function promote() {
+    if (promoted) {
+      return;
+    }
+    var script = document.createElement("script");
+    script.id = "boomr-scr-as";
+    script.src = window.BOOMR.url;
+    script.async = true;
+    parentNode.appendChild(script);
+    promoted = true;
+  }
+  function iframeLoader(wasFallback) {
+    promoted = true;
+    var dom, bootstrap, iframe, iframeStyle;
+    var doc = document;
+    var win = window;
+    window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+    bootstrap = function(parent, scriptId) {
+      var script = doc.createElement("script");
+      script.id = scriptId || "boomr-if-as";
+      script.src = window.BOOMR.url;
+      BOOMR_lstart = new Date().getTime();
+      parent = parent || doc.body;
+      parent.appendChild(script);
+    };
+    if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+      window.BOOMR.snippetMethod = "s";
+      bootstrap(parentNode, "boomr-async");
+      return;
+    }
+    iframe = document.createElement("IFRAME");
+    iframe.src = "about:blank";
+    iframe.title = "";
+    iframe.role = "presentation";
+    iframe.loading = "eager";
+    iframeStyle = (iframe.frameElement || iframe).style;
+    iframeStyle.width = 0;
+    iframeStyle.height = 0;
+    iframeStyle.border = 0;
+    iframeStyle.display = "none";
+    parentNode.appendChild(iframe);
+    try {
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    } catch (e) {
+      dom = document.domain;
+      iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    }
+    if (dom) {
+      doc._boomrl = function() {
+        this.domain = dom;
+        bootstrap();
+      };
+      doc.write("<body onload='document._boomrl();'>");
+    } else {
+      win._boomrl = function() {
+        bootstrap();
+      };
+      if (win.addEventListener) {
+        win.addEventListener("load", win._boomrl, false);
+      } else if (win.attachEvent) {
+        win.attachEvent("onload", win._boomrl);
+      }
+    }
+    doc.close();
+  }
+  var link = document.createElement("link");
+  if (link.relList &&
+    typeof link.relList.supports === "function" &&
+    link.relList.supports("preload") &&
+    ("as" in link)) {
+    window.BOOMR.snippetMethod = "p";
+    link.href = window.BOOMR.url;
+    link.rel = "preload";
+    link.as = "script";
+    link.addEventListener("load", promote);
+    link.addEventListener("error", function() {
+      iframeLoader(true);
+    });
+    setTimeout(function() {
+      if (!promoted) {
+        iframeLoader(true);
+      }
+    }, LOADER_TIMEOUT);
+    BOOMR_lstart = new Date().getTime();
+    parentNode.appendChild(link);
+  } else {
+    iframeLoader(false);
+  }
+  function boomerangSaveLoadTime(e) {
+    window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+  }
+  if (window.addEventListener) {
+    window.addEventListener("load", boomerangSaveLoadTime, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", boomerangSaveLoadTime);
+  }
+  if (document.addEventListener) {
+    document.addEventListener("onBoomerangLoaded", function(e) {
+      e.detail.BOOMR.init({
+        producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
+        ResourceTiming: {
+          enabled: true,
+          trackedResourceTypes: ["script", "img", "css"]
+        },
+      });
+      e.detail.BOOMR.t_end = new Date().getTime();
+    });
+  } else if (document.attachEvent) {
+    document.attachEvent("onpropertychange", function(e) {
+      if (!e) e=event;
+      if (e.propertyName === "onBoomerangLoaded") {
+        e.detail.BOOMR.init({
+          producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
+          ResourceTiming: {
+            enabled: true,
+            trackedResourceTypes: ["script", "img", "css"]
+          },
+        });
+        e.detail.BOOMR.t_end = new Date().getTime();
+      }
+    });
+  }
+})();</script>
+</head>
+
+    <body id="account" class="template-login-account">
+      <!-- Google Tag Manager (noscript) -->
+
+      <noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-NX6QRHL
+
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <!-- End Google Tag Manager (noscript) -->
+        <a class="in-page-link visually-hidden skip-link" href="#MainContent">Skip to content</a>
+
+        <!-- BEGIN static --><div id="shopify-section-zg-header" class="shopify-section"><header role="banner" class="navigation-header-container navigation-header-container--desktop" data-section-id="zg-header" data-section-type="megamenu">
+  <div class="header-outer-container">
+    <div class="header-inner-container main-container">
+        <h1 class="header-logo-image-container">
+          <a href="/" class="header-logo-image">
+            <svg viewBox="0 0 207 72">  <g> <rect width="207" height="72" fill="#fff" fill-opacity="0"></rect> <path d="M29,36A22.43,22.43,0,1,1,51.38,58.5a23.76,23.76,0,0,1-19-10.09H25v9.93h-3.6V48.4H0L25,13.5V44.67h5.72A22.31,22.31,0,0,1,29,36ZM7,44.66H21.37V25ZM60.93,37.6a4.15,4.15,0,0,0-.56,7.06,6,6,0,0,0,6,.43,7,7,0,0,0,3.12-4.32v-.06a1.8,1.8,0,0,0,.06-.22c0-.09,0-.17.07-.25l0-.13h0a2.36,2.36,0,0,0,.07-.31.51.51,0,0,0,0-.09v0A18.21,18.21,0,0,0,70.07,36,18.69,18.69,0,1,0,34.7,44.43c3.6-.86,5.9-3.73,8.25-6.66,2.22-2.77,4.49-5.6,7.95-6.87,10.16-3.72,14.41,6.29,14.51,6.55h0A5.38,5.38,0,0,0,60.93,37.6Zm19.94,3.19a17.7,17.7,0,0,1,.27-3.13,14.3,14.3,0,0,1,1.43-4.14,12.49,12.49,0,0,1,4.78-5,13.58,13.58,0,0,1,6.89-1.78,14.8,14.8,0,0,1,10.55,4.11l2.32-2.76h0a16.92,16.92,0,0,0-5.64-3.62A20,20,0,0,0,94,23.16a17.86,17.86,0,0,0-8.93,2.24A16,16,0,0,0,79,31.67,18,18,0,0,0,77.07,37a20.32,20.32,0,0,0-.34,3.79A18.67,18.67,0,0,0,79,49.93a16.05,16.05,0,0,0,6.15,6.27A17.85,17.85,0,0,0,94,58.43a19.58,19.58,0,0,0,7.86-1.53,15.67,15.67,0,0,0,5.75-4.21h0l-2.3-2.43a13.16,13.16,0,0,1-4.75,3.41,16.27,16.27,0,0,1-6.36,1.22,13.45,13.45,0,0,1-6.89-1.78,12.32,12.32,0,0,1-4.78-5A15.43,15.43,0,0,1,80.87,40.79Zm51.32-16.32a13.19,13.19,0,0,1,5.22,3.86c2.8,3.4,4.12,7.65,3.93,13.39H111.92l0,.2a14.79,14.79,0,0,0,4.22,9.65,13.12,13.12,0,0,0,9.29,3.52,16.38,16.38,0,0,0,6.33-1.22,14.83,14.83,0,0,0,4.91-3.35l2.29,2.3a17.55,17.55,0,0,1-6,4.11,20.19,20.19,0,0,1-7.83,1.5,17.91,17.91,0,0,1-9-2.24A16.15,16.15,0,0,1,110,50a18.93,18.93,0,0,1-2.6-9.16A18.89,18.89,0,0,1,110,31.68a15.9,15.9,0,0,1,6.14-6.27A17.62,17.62,0,0,1,125,23.17,18.28,18.28,0,0,1,132.19,24.47Zm-16.08,5.39A13.31,13.31,0,0,0,112,38.21h25.6A13.77,13.77,0,0,0,134,29.83a12.16,12.16,0,0,0-8.85-3.32A12.81,12.81,0,0,0,116.11,29.86Zm56.09,5.2c0-3.71-.84-6.64-3.13-8.73s-5.57-3.16-9.76-3.16A21.29,21.29,0,0,0,152,24.34a29.52,29.52,0,0,0-6.61,3.55l1.82,2.79c3.77-2.77,7.58-4.18,11.32-4.18,3.22,0,5.71.79,7.39,2.35a8.55,8.55,0,0,1,2.56,6.61v2.78h-12c-4.07,0-7.3.87-9.62,2.6A8.57,8.57,0,0,0,143.35,48a9.87,9.87,0,0,0,5.59,9.11,13.45,13.45,0,0,0,6.2,1.37A18.5,18.5,0,0,0,162.8,57a12.56,12.56,0,0,0,5.37-4.56l.34-.49.07,6.35h3.69Zm-3.7,10.78a11.26,11.26,0,0,1-4.5,6.89,12.56,12.56,0,0,1-3.65,1.8,16.29,16.29,0,0,1-4.41.56,9.56,9.56,0,0,1-6.27-2,6.48,6.48,0,0,1-2.39-5.24,5.09,5.09,0,0,1,2.51-4.65c1.63-1.05,4.05-1.58,7.16-1.58h11.56Zm34.67,12.45H207V36.75c0-4.2-.82-7.55-3.17-10s-5.65-3.62-9.79-3.62a16.89,16.89,0,0,0-8.49,2.13,19.5,19.5,0,0,0-5.63,5.21V23.3h-3.76v35h3.76V39.45a13.06,13.06,0,0,1,3.91-8.63A12.14,12.14,0,0,1,192.55,27c3.31,0,5.48,0,7.83,2.28,1.94,1.85,2.86,5.59,2.79,8.57Z" fill="#0057b8" fill-rule="evenodd"></path> </g> </svg>
+          </a>
+        </h1>
+
+        <div class="header-search-bar-for-desktop-new">
+          <form>
+            <input placeholder="Search..." type="text" name="q" id="searchq" />
+            <span><button type="submit"><svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25" version="1.1">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search" transform="translate(-275.000000, -25.000000)">
+            <g transform="translate(275.000000, 25.000000)">
+                <circle id="Oval" stroke="#0057B8" stroke-width="2" cx="10.2" cy="10.2" r="9.2"/>
+                <line x1="18" y1="16.8" x2="24.8" y2="23.55" id="Line" stroke="#0057B8" stroke-width="2" stroke-linecap="round"/>
+            </g>
+        </g>
+    </g>
+</svg></button></span>
+          </form>
+        </div>
+
+        <div class="header-icon-menu-container">
+
+          <div class="currency-selector currency-selector--desktop">
+<span style="display:none;" class="BOLD-mc-picker-mnt " data-open="down" data-bold-mc-picker-mnt></span>
+</div>
+
+          <!--a href="#" class="header-help-container header-icon-container siteSearch">
+            <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25" version="1.1">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search" transform="translate(-275.000000, -25.000000)">
+            <g transform="translate(275.000000, 25.000000)">
+                <circle id="Oval" stroke="#0057B8" stroke-width="2" cx="10.2" cy="10.2" r="9.2"/>
+                <line x1="18" y1="16.8" x2="24.8" y2="23.55" id="Line" stroke="#0057B8" stroke-width="2" stroke-linecap="round"/>
+            </g>
+        </g>
+    </g>
+</svg>
+          </a-->
+
+          <a href="https://4oceanhelp-center.gorgias.help/en-US" target="_blank" class="header-help-container header-icon-container">
+            <svg viewBox="0 0 80 80"><path  d="M40.5.5a40,40,0,1,0,40,40,40,40,0,0,0-40-40m0,74a34,34,0,1,1,34-34,34,34,0,0,1-34,34" transform="translate(-0.5 -0.5)"></path><path d="M33.5,25.2,30,21.3c1.8-1.7,4.9-3.8,11.4-3.8C48.5,17.5,53,22,53,28.6c0,6-3,9.2-6.8,12.8l-6,5.5c-3.2,2-4.6-1.5-4.4-3.1.8-4.4,10.1-7.5,11.4-13.9.8-3.8-2.4-7.3-6.6-7.3s-5.7,1.1-7.1,2.6" transform="translate(-0.5 -0.5)"></path><circle cx="39.3" cy="58.5" r="4.1"></circle></svg>
+          </a>
+
+          
+            
+              <a href="/account" class="header-account-icon-container header-icon-container"><svg viewBox="0 0 19.9 20"><path d="M15.13,11a2.75,2.75,0,0,1,2.63,2l2.12,7v0H18.33l-2-6.61a1.25,1.25,0,0,0-1.2-.89H4.77a1.25,1.25,0,0,0-1.2.89L1.57,20H0v0l2.12-7a2.75,2.75,0,0,1,2.63-2ZM9.95,0a5,5,0,1,1-5,5A5,5,0,0,1,9.95,0Zm0,1.5A3.5,3.5,0,1,0,13.45,5,3.5,3.5,0,0,0,9.95,1.5Z"></path> </svg></a> 
+            
+          
+          
+          <a href="#" class="header-cart-icon-container header-icon-container">
+            <svg viewBox="0 0 20 20"><path d="M17.95,7.5A2.05,2.05,0,0,1,20,10l0,.15-2.55,8.4A2.05,2.05,0,0,1,15.56,20h-11a2.05,2.05,0,0,1-2-1.45L.09,10.15a2.05,2.05,0,0,1,2-2.65Zm0,1.5H2.05L1.89,9a.55.55,0,0,0-.37.69l2.55,8.4a.55.55,0,0,0,.53.39H15.39a.55.55,0,0,0,.49-.31l0-.08,2.55-8.4A.55.55,0,0,0,18.11,9L18,9ZM10,0a3.35,3.35,0,0,1,3.08,2l1.7,4H13.15L11.7,2.62a1.85,1.85,0,0,0-3.4,0L6.85,6H5.22l1.7-4A3.35,3.35,0,0,1,10,0Z"></path> </svg>
+
+            <span class="header-cart-qty-container hide">
+              0
+            </span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+    <div class="header-outer-container" style="background-color: #0057b8; color: ">
+      <div class="header-inner-container main-container">
+
+        <!-- All Menu Hamburger -->
+        
+          <div class="all-menu-hamburger">
+            <div class="menu-icon-show header-link" id="menu-icon-show">
+              <div class="hamburger-all">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <span class="header-link-inner">All</span>
+            </div>
+          </div>
+
+          <div class="all-menu-innner-items-show" id="all-menu-innner-items-show" style="display: none;">
+            <div class="close-hamburger" id="close-hamburger">
+              &times;
+            </div>
+            <nav role="navigation" class="desktop-hamburger">
+                
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <div class="mobile-header-link" data-mobile-navigation-item="7e370baf-878d-4810-ac46-cd08c924977f">
+                          <span class="header-link-inner">Shop</span>
+
+                          <span class="header-link-inner-arrow"></span>
+                        </div>
+                      
+                    
+
+                    
+                      <div class="header-link__mega-menu" data-mobile-megamenu="7e370baf-878d-4810-ac46-cd08c924977f">
+                        <div class="megamenu-columns-container">
+                          <div class="megamenu-column megamenu-column--mobile">                
+                            
+                            <a href="/collections/shop-all" class="megamenu-column__link"><span>Shop All</span></a>
+                            
+                            <a href="/collections/bracelets" class="megamenu-column__link"><span>All Bracelets</span></a>
+                            
+                            <a href="/collections/bracelets-jewelry" class="megamenu-column__link"><span>All Jewelry</span></a>
+                            
+                            <a href="/products/clean-ocean-club" class="megamenu-column__link"><span>Bracelet Subscriptions</span></a>
+                            
+                            <a href="/collections/necklaces" class="megamenu-column__link"><span>Necklaces</span></a>
+                            
+                            <a href="/collections/anklets" class="megamenu-column__link"><span>Anklets</span></a>
+                            
+                            <a href="/collections/new-products" class="megamenu-column__link"><span>New Arrivals</span></a>
+                            
+                            <a href="/collections/apparel" class="megamenu-column__link"><span>Apparel</span></a>
+                            
+                            <a href="/collections/beach-gear" class="megamenu-column__link"><span>Beach Gear</span></a>
+                            
+                            <a href="/collections/single-use-alternatives" class="megamenu-column__link"><span>Clean Living Collection</span></a>
+                            
+                            <a href="/collections/bags" class="megamenu-column__link"><span>Bags</span></a>
+                            
+                            <a href="/collections/drinkware" class="megamenu-column__link"><span>Drinkware</span></a>
+                            
+                            <a href="/collections/cleanup-gear" class="megamenu-column__link"><span>Cleanup Gear</span></a>
+                            
+                            <a href="/collections/accessories" class="megamenu-column__link"><span>Accessories</span></a>
+                            
+                            <a href="/products/4ocean-gift-cards" class="megamenu-column__link"><span>Gift Cards</span></a>
+                            
+                            <a href="/collections/clearance" class="megamenu-column__link"><span>Clearance</span></a>
+                            
+                            <a href="/products/pound-plus" class="megamenu-column__link"><span>Pound+</span></a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <a href="/pages/cariuma-x-4ocean" class="mobile-header-link">
+                          <span class="header-link-inner">Cariuma Collaboration</span>
+                        </a>
+                      
+                    
+
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <a href="/products/ocean-bracelet-stack" class="mobile-header-link">
+                          <span class="header-link-inner">New! Ocean Bracelet Stack</span>
+                        </a>
+                      
+                    
+
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <div class="mobile-header-link" data-mobile-navigation-item="055fe410-05c6-4acf-b1c7-51222a591890">
+                          <span class="header-link-inner">Dune Jewelry Collection</span>
+
+                          <span class="header-link-inner-arrow"></span>
+                        </div>
+                      
+                    
+
+                    
+                      <div class="header-link__mega-menu" data-mobile-megamenu="055fe410-05c6-4acf-b1c7-51222a591890">
+                        <div class="megamenu-columns-container">
+                          <div class="megamenu-column megamenu-column--mobile">                
+                            
+                            <a href="/pages/dune-jewelry" class="megamenu-column__link"><span>Dune Jewelry Collection</span></a>
+                            
+                            <a href="/collections/dune-rings" class="megamenu-column__link"><span>Dune Boho Stack Rings</span></a>
+                            
+                            <a href="/collections/dune-bracelets" class="megamenu-column__link"><span>Dune Rope Cuff Bracelets</span></a>
+                            
+                            <a href="/collections/dune-necklaces" class="megamenu-column__link"><span>Dune Wave Necklaces</span></a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <a href="/pages/reef-bracelet-of-the-month-june-2022" class="mobile-header-link">
+                          <span class="header-link-inner">Limited Edition - Mesoamerican Reef Bracelets</span>
+                        </a>
+                      
+                    
+
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <a href="/pages/osborne-reef" class="mobile-header-link">
+                          <span class="header-link-inner">Osborne Reef</span>
+                        </a>
+                      
+                    
+
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <div class="mobile-header-link" data-mobile-navigation-item="878164d1-33b5-47b3-9080-e773508a4830">
+                          <span class="header-link-inner">Bracelets</span>
+
+                          <span class="header-link-inner-arrow"></span>
+                        </div>
+                      
+                    
+
+                    
+                      <div class="header-link__mega-menu" data-mobile-megamenu="878164d1-33b5-47b3-9080-e773508a4830">
+                        <div class="megamenu-columns-container">
+                          <div class="megamenu-column megamenu-column--mobile">                
+                            
+                            <a href="/collections/bracelets" class="megamenu-column__link"><span>All Bracelets</span></a>
+                            
+                            <a href="/products/clean-ocean-club" class="megamenu-column__link"><span>Bracelet Subscriptions</span></a>
+                            
+                            <a href="/products/ocean-bracelet-stack" class="megamenu-column__link"><span>New! Ocean Bracelet Stack</span></a>
+                            
+                            <a href="/pages/reef-bracelet-of-the-month-june-2022" class="megamenu-column__link"><span>Limited Edition- Mesoamerican Reef Bracelets</span></a>
+                            
+                            <a href="/collections/guatemala-bracelets" class="megamenu-column__link"><span>Guatemala Bracelets</span></a>
+                            
+                            <a href="/collections/bali-bracelets" class="megamenu-column__link"><span>Bali Bracelets</span></a>
+                            
+                            <a href="/pages/osborne-reef" class="megamenu-column__link"><span>Osborne Reef Bracelet</span></a>
+                            
+                            <a href="/collections/ocean-drop-bracelets" class="megamenu-column__link"><span>Ocean Drop Bracelets</span></a>
+                            
+                            <a href="/collections/beaded-bracelet" class="megamenu-column__link"><span>Beaded Bracelets</span></a>
+                            
+                            <a href="/collections/braided-bracelet" class="megamenu-column__link"><span>Braided Bracelets </span></a>
+                            
+                            <a href="/collections/7-bead-braided" class="megamenu-column__link"><span>7 Bead Braided</span></a>
+                            
+                            <a href="/collections/10-bead-braided" class="megamenu-column__link"><span>10 Bead Braided</span></a>
+                            
+                            <a href="/collections/pound-pack" class="megamenu-column__link"><span>2-Pound Packs</span></a>
+                            
+                            <a href="/collections/bracelet-collections" class="megamenu-column__link"><span>Bracelet Box Sets</span></a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <a href="/collections/anklets" class="mobile-header-link">
+                          <span class="header-link-inner">Anklets</span>
+                        </a>
+                      
+                    
+
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <a href="/collections/necklaces" class="mobile-header-link">
+                          <span class="header-link-inner">Necklaces</span>
+                        </a>
+                      
+                    
+
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <div class="mobile-header-link" data-mobile-navigation-item="866059fb-193d-4a1b-a44f-acec7ee7a586">
+                          <span class="header-link-inner">Sterling Silver Jewelry</span>
+
+                          <span class="header-link-inner-arrow"></span>
+                        </div>
+                      
+                    
+
+                    
+                      <div class="header-link__mega-menu" data-mobile-megamenu="866059fb-193d-4a1b-a44f-acec7ee7a586">
+                        <div class="megamenu-columns-container">
+                          <div class="megamenu-column megamenu-column--mobile">                
+                            
+                            <a href="/pages/dune-jewelry" class="megamenu-column__link"><span>Dune Jewelry Collection</span></a>
+                            
+                            <a href="/pages/4ocean-sterling-silver-necklace-and-earrings-with-recycled-ocean-plastic" class="megamenu-column__link"><span>4ocean Sterling Silver Jewelry</span></a>
+                            
+                            <a href="/collections/sterling-silver-necklaces" class="megamenu-column__link"><span>Sterling Silver Necklaces</span></a>
+                            
+                            <a href="/products/4ocean-sterling-silver-stud-earrings" class="megamenu-column__link"><span>Sterling Silver Earrings</span></a>
+                            
+                            <a href="/collections/dune-rings" class="megamenu-column__link"><span>Sterling Silver Rings</span></a>
+                            
+                            <a href="/products/sterling-silver-necklace-earring-set" class="megamenu-column__link"><span>Sterling Silver Necklace & Earrings Set</span></a>
+                            
+                            <a href="/collections/sterling-silver-jewelry" class="megamenu-column__link"><span>All Sterling Silver Jewelry</span></a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
+                  
+                
+                  
+                    
+                    
+                    
+
+                    
+                      
+                        <div class="mobile-header-link" data-mobile-navigation-item="95bb119b-6280-475b-8dff-9f71fcd3523d">
+                          <span class="header-link-inner">About Us</span>
+
+                          <span class="header-link-inner-arrow"></span>
+                        </div>
+                      
+                    
+
+                    
+                      <div class="header-link__mega-menu" data-mobile-megamenu="95bb119b-6280-475b-8dff-9f71fcd3523d">
+                        <div class="megamenu-columns-container">
+                          <div class="megamenu-column megamenu-column--mobile">                
+                            
+                            <a href="/pages/about" class="megamenu-column__link"><span>About Us</span></a>
+                            
+                            <a href="/pages/our-story" class="megamenu-column__link"><span>Our Story</span></a>
+                            
+                            <a href="/blogs/blog" class="megamenu-column__link"><span>Blog</span></a>
+                            
+                            <a href="/pages/4ocean-sea-life-encounters-rescues-and-releases" class="megamenu-column__link"><span>Sea Life Encounters</span></a>
+                            
+                            <a href="/pages/sustainable-fishing" class="megamenu-column__link"><span>Sustainable Fishing</span></a>
+                            
+                            <a href="/pages/our-impact" class="megamenu-column__link"><span>Our Impact</span></a>
+                            
+                            <a href="/pages/pounds-pulled-from-the-ocean" class="megamenu-column__link"><span>20 Million Pounds Pulled</span></a>
+                            
+                            <a href="/pages/cleanup-operations" class="megamenu-column__link"><span>Cleanup Operations</span></a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                     
+                  
+                
+            
+
+              
+            </nav>
+          </div>
+        
+        <!-- All Menu Hamburger -->
+        
+        <nav role="navigation" class="header-main-navigation" data-header-navigation>
+          <!--div class="all-menu-hamburger">
+            <div class="menu-icon-show" id="menu-icon-show">
+              <div class="hamburger-all">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <span>All</span>
+            </div>
+          </div-->
+          
+
+            
+
+              
+              
+              
+              
+
+              
+              
+                
+                
+
+                
+                  
+                  
+
+              
+                <a href="/collections/shop-all" class="header-link header-link--has-menu" data-navigation-item="48191a43-60bb-496e-b06e-0d7ba0a31548">
+                  <span class="header-link-inner">SHOP</span>
+                </a>
+              
+			  
+          	 
+            
+          
+
+            
+
+              
+              
+              
+              
+
+              
+              
+                
+                
+
+                
+              
+                
+                
+
+                
+              
+                
+                
+
+                
+              
+                
+                
+
+                
+              
+
+              
+                <a href="/pages/cariuma-x-4ocean" class="header-link " data-navigation-item="bbcc3a81-072a-446a-bd68-5d6bf8af26b4">
+                  <span class="header-link-inner">CARIUMA SNEAKERS</span>
+                </a>
+              
+			  
+          	 
+            
+          
+
+            
+
+              
+              
+              
+              
+
+              
+              
+                
+                
+
+                
+              
+                
+                
+
+                
+              
+                
+                
+
+                
+              
+                
+                
+
+                
+              
+
+              
+                <a href="/pages/osborne-reef" class="header-link " data-navigation-item="b5b6cf40-01c6-48c2-8789-2fc7b11da986">
+                  <span class="header-link-inner">OSBORNE REEF</span>
+                </a>
+              
+			  
+          	 
+            
+          
+
+            
+
+              
+              
+              
+              
+
+              
+              
+                
+                
+
+                
+                  
+                  
+
+              
+                <a href="/collections/bracelets" class="header-link header-link--has-menu" data-navigation-item="835a7cd9-282c-470e-8a69-7d2d1fe22136">
+                  <span class="header-link-inner">BRACELETS</span>
+                </a>
+              
+			  
+          	 
+            
+          
+
+            
+              
+              
+              
+              
+              
+              
+
+              
+                <a href="/products/clean-ocean-club" class="header-link " data-navigation-item="e40e36ab-2c0d-4059-9be8-50944fa68c70">
+                  <span class="header-link-inner">BRACELET SUBSCRIPTIONS</span>
+                </a>
+              
+			        
+            
+          
+
+            
+
+              
+              
+              
+              
+
+              
+              
+                
+                
+
+                
+              
+                
+                
+
+                
+                  
+                  
+
+              
+                <a href="/collections/sterling-silver-jewelry" class="header-link header-link--has-menu" data-navigation-item="38f9b5e8-03e3-4092-8c60-3b6d66218ef5">
+                  <span class="header-link-inner">STERLING SILVER JEWELRY</span>
+                </a>
+              
+			  
+          	 
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+
+            
+          
+        </nav>
+      </div>
+    </div>
+    
+</header> 
+
+<script>
+  $(document).ready(function(){
+    //console.log('READY');
+    const searchq = $('.header-search-bar-for-desktop-new form #searchq');
+    //console.log(searchq);
+    searchq.on('input', function() {
+      //console.log('CHANGED');
+      const popout = $('#popout-closed').length;
+      //console.log('POPOUT', popout);
+      if (!popout) {
+        $('#klevuSearchingArea').prepend('<span class="popout-close" id="popout-closed">&times;</span>');
+        //console.log('READY TO CLOSED')
+        const closedPopout = $('#popout-closed');
+        $(closedPopout).on('click',function(){
+          //console.log('POPOUT CLOSED')
+          $('.klevu-fluid #klevuSearchingArea').hide();
+        });
+      }
+    });
+
+    const windowViewport = $(window).width();
+
+    $(window).on('resize', function() {
+      if ($(this).width() !== windowViewport) {
+        $('#klevu-pt-rs-hover').hide();
+        $('.klevu-fluid #klevuSearchingArea').hide();
+      }
+    });
+
+    const hamburger = $('#menu-icon-show');
+    const sidebarPanel = $('#all-menu-innner-items-show');
+    const closeHamburger = $('#close-hamburger');
+    //const klevuSearchingArea_box = $('#klevuSearchingArea');
+    //const searchq_input = $('.header-search-bar-for-desktop-new form #searchq');
+
+    $(hamburger).on('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $(sidebarPanel).show('200');
+        //$(sidebarPanel).css('background-color','#d9eef4');
+        $(sidebarPanel).css('background-color','#fff');
+        $('body').css('overflow','hidden');
+        $('body').prepend('<div class="body-overlay-hamburger" id="body-overlay-hamburger"></div');
+        $('#klevuSearchingArea').css('display', 'none');
+        $('#klevu-pt-rs-hover').css('display', 'none');
+    });
+    $(closeHamburger).on('click', function(){
+        $(sidebarPanel).hide('200');
+        $('body').css('overflow','auto');
+        $('#body-overlay-hamburger').removeClass('body-overlay-hamburger');
+    });
+    $(sidebarPanel).on('click', function(e){
+      e.stopPropagation();
+    });
+    /*$(klevuSearchingArea_box).on('click', function(e){
+      e.stopPropagation();
+    });
+    $(searchq_input).on('click', function(e){
+      e.stopPropagation();
+    });*/
+    $('body').click(function(e){
+        
+        $(sidebarPanel).hide('200');
+        $('body').css('overflow','auto');
+        $('#body-overlay-hamburger').removeClass('body-overlay-hamburger');
+        //$('#klevuSearchingArea').css('display', 'none');
+        //$('#klevu-pt-rs-hover').css('display', 'none');
+    });
+  });
+</script>
+
+</div><!-- END static -->
+        <!-- BEGIN static --><div id="shopify-section-zg-header-mobile" class="shopify-section"><div role="banner" class="navigation-header-container navigation-header-container--mobile" data-section-id="zg-header-mobile" data-section-type="megamenu">
+  <div class="header-inner-container main-container header--padded-top-bottom-15 header-mobile" style="background-color: #0057b8; color: "> 
+
+    <div class="mobile-nav-content">
+      <a href="#" class="mobile-hamburger-menu header-icon-container js-menu-toggle">
+        <svg viewBox="0 0 28 18">  <path d="M7.36,15.39a5.24,5.24,0,0,0,6.44,0,6.41,6.41,0,0,1,8,0,5.26,5.26,0,0,0,6.22.17v1.71a6.45,6.45,0,0,1-7-.66,5.24,5.24,0,0,0-6.44,0,6.41,6.41,0,0,1-8,0,5.24,5.24,0,0,0-6.44,0L0,16.72V14.94A6.44,6.44,0,0,1,7.36,15.39Zm0-7a5.24,5.24,0,0,0,6.44,0,6.41,6.41,0,0,1,8,0A5.26,5.26,0,0,0,28,8.56v1.71a6.45,6.45,0,0,1-7-.66,5.24,5.24,0,0,0-6.44,0,6.41,6.41,0,0,1-8,0,5.24,5.24,0,0,0-6.44,0L0,9.72V7.94A6.44,6.44,0,0,1,7.36,8.39Zm0-7a5.24,5.24,0,0,0,6.44,0,6.41,6.41,0,0,1,8,0A5.26,5.26,0,0,0,28,1.56V3.27a6.45,6.45,0,0,1-7-.66,5.24,5.24,0,0,0-6.44,0,6.41,6.41,0,0,1-8,0,5.24,5.24,0,0,0-6.44,0L0,2.72V.94A6.44,6.44,0,0,1,7.36,1.39Z"></path> </svg>
+        <i class="mobile-menu-close-icon"></i>
+        <span>MENU</span>
+      </a>
+    </div>
+    
+      <div class="header-logo-image-container h1">
+    
+      <a href="/" class="header-logo-image">
+        <svg viewBox="0 0 207 72">  <g> <rect width="207" height="72" fill="#fff" fill-opacity="0"></rect> <path d="M29,36A22.43,22.43,0,1,1,51.38,58.5a23.76,23.76,0,0,1-19-10.09H25v9.93h-3.6V48.4H0L25,13.5V44.67h5.72A22.31,22.31,0,0,1,29,36ZM7,44.66H21.37V25ZM60.93,37.6a4.15,4.15,0,0,0-.56,7.06,6,6,0,0,0,6,.43,7,7,0,0,0,3.12-4.32v-.06a1.8,1.8,0,0,0,.06-.22c0-.09,0-.17.07-.25l0-.13h0a2.36,2.36,0,0,0,.07-.31.51.51,0,0,0,0-.09v0A18.21,18.21,0,0,0,70.07,36,18.69,18.69,0,1,0,34.7,44.43c3.6-.86,5.9-3.73,8.25-6.66,2.22-2.77,4.49-5.6,7.95-6.87,10.16-3.72,14.41,6.29,14.51,6.55h0A5.38,5.38,0,0,0,60.93,37.6Zm19.94,3.19a17.7,17.7,0,0,1,.27-3.13,14.3,14.3,0,0,1,1.43-4.14,12.49,12.49,0,0,1,4.78-5,13.58,13.58,0,0,1,6.89-1.78,14.8,14.8,0,0,1,10.55,4.11l2.32-2.76h0a16.92,16.92,0,0,0-5.64-3.62A20,20,0,0,0,94,23.16a17.86,17.86,0,0,0-8.93,2.24A16,16,0,0,0,79,31.67,18,18,0,0,0,77.07,37a20.32,20.32,0,0,0-.34,3.79A18.67,18.67,0,0,0,79,49.93a16.05,16.05,0,0,0,6.15,6.27A17.85,17.85,0,0,0,94,58.43a19.58,19.58,0,0,0,7.86-1.53,15.67,15.67,0,0,0,5.75-4.21h0l-2.3-2.43a13.16,13.16,0,0,1-4.75,3.41,16.27,16.27,0,0,1-6.36,1.22,13.45,13.45,0,0,1-6.89-1.78,12.32,12.32,0,0,1-4.78-5A15.43,15.43,0,0,1,80.87,40.79Zm51.32-16.32a13.19,13.19,0,0,1,5.22,3.86c2.8,3.4,4.12,7.65,3.93,13.39H111.92l0,.2a14.79,14.79,0,0,0,4.22,9.65,13.12,13.12,0,0,0,9.29,3.52,16.38,16.38,0,0,0,6.33-1.22,14.83,14.83,0,0,0,4.91-3.35l2.29,2.3a17.55,17.55,0,0,1-6,4.11,20.19,20.19,0,0,1-7.83,1.5,17.91,17.91,0,0,1-9-2.24A16.15,16.15,0,0,1,110,50a18.93,18.93,0,0,1-2.6-9.16A18.89,18.89,0,0,1,110,31.68a15.9,15.9,0,0,1,6.14-6.27A17.62,17.62,0,0,1,125,23.17,18.28,18.28,0,0,1,132.19,24.47Zm-16.08,5.39A13.31,13.31,0,0,0,112,38.21h25.6A13.77,13.77,0,0,0,134,29.83a12.16,12.16,0,0,0-8.85-3.32A12.81,12.81,0,0,0,116.11,29.86Zm56.09,5.2c0-3.71-.84-6.64-3.13-8.73s-5.57-3.16-9.76-3.16A21.29,21.29,0,0,0,152,24.34a29.52,29.52,0,0,0-6.61,3.55l1.82,2.79c3.77-2.77,7.58-4.18,11.32-4.18,3.22,0,5.71.79,7.39,2.35a8.55,8.55,0,0,1,2.56,6.61v2.78h-12c-4.07,0-7.3.87-9.62,2.6A8.57,8.57,0,0,0,143.35,48a9.87,9.87,0,0,0,5.59,9.11,13.45,13.45,0,0,0,6.2,1.37A18.5,18.5,0,0,0,162.8,57a12.56,12.56,0,0,0,5.37-4.56l.34-.49.07,6.35h3.69Zm-3.7,10.78a11.26,11.26,0,0,1-4.5,6.89,12.56,12.56,0,0,1-3.65,1.8,16.29,16.29,0,0,1-4.41.56,9.56,9.56,0,0,1-6.27-2,6.48,6.48,0,0,1-2.39-5.24,5.09,5.09,0,0,1,2.51-4.65c1.63-1.05,4.05-1.58,7.16-1.58h11.56Zm34.67,12.45H207V36.75c0-4.2-.82-7.55-3.17-10s-5.65-3.62-9.79-3.62a16.89,16.89,0,0,0-8.49,2.13,19.5,19.5,0,0,0-5.63,5.21V23.3h-3.76v35h3.76V39.45a13.06,13.06,0,0,1,3.91-8.63A12.14,12.14,0,0,1,192.55,27c3.31,0,5.48,0,7.83,2.28,1.94,1.85,2.86,5.59,2.79,8.57Z" fill="#fff" fill-rule="evenodd"></path> </g> </svg>
+      </a>
+    
+      </div>
+    
+
+    <div class="header-icon-menu-container">
+
+      <a href="https://4oceanhelp-center.gorgias.help/en-US" target="_blank" class="header-help-container header-icon-container">
+        <svg viewBox="0 0 80 80"><path  d="M40.5.5a40,40,0,1,0,40,40,40,40,0,0,0-40-40m0,74a34,34,0,1,1,34-34,34,34,0,0,1-34,34" transform="translate(-0.5 -0.5)"></path><path d="M33.5,25.2,30,21.3c1.8-1.7,4.9-3.8,11.4-3.8C48.5,17.5,53,22,53,28.6c0,6-3,9.2-6.8,12.8l-6,5.5c-3.2,2-4.6-1.5-4.4-3.1.8-4.4,10.1-7.5,11.4-13.9.8-3.8-2.4-7.3-6.6-7.3s-5.7,1.1-7.1,2.6" transform="translate(-0.5 -0.5)"></path><circle cx="39.3" cy="58.5" r="4.1"></circle></svg>
+      </a>
+      
+
+      
+        
+          <a href="/account" class="header-account-icon-container header-icon-container"><svg viewBox="0 0 19.9 20"><path d="M15.13,11a2.75,2.75,0,0,1,2.63,2l2.12,7v0H18.33l-2-6.61a1.25,1.25,0,0,0-1.2-.89H4.77a1.25,1.25,0,0,0-1.2.89L1.57,20H0v0l2.12-7a2.75,2.75,0,0,1,2.63-2ZM9.95,0a5,5,0,1,1-5,5A5,5,0,0,1,9.95,0Zm0,1.5A3.5,3.5,0,1,0,13.45,5,3.5,3.5,0,0,0,9.95,1.5Z"></path> </svg></a> 
+        
+      
+
+<!-- <a href="#" class="header-search-icon-container header-icon-container siteSearch">
+  <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25" version="1.1">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search" transform="translate(-275.000000, -25.000000)">
+            <g transform="translate(275.000000, 25.000000)">
+                <circle id="Oval" stroke="#0057B8" stroke-width="2" cx="10.2" cy="10.2" r="9.2"/>
+                <line x1="18" y1="16.8" x2="24.8" y2="23.55" id="Line" stroke="#0057B8" stroke-width="2" stroke-linecap="round"/>
+            </g>
+        </g>
+    </g>
+</svg>
+</a> -->
+      <a href="#" class="header-cart-icon-container header-icon-container">
+        <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="26" height="26" viewBox="0 0 26 26">
+    <image x="3" width="20" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAYAAAAxFw7TAAAB2UlEQVQ4jaVVPU/cQBB9s3FFA6JK6fyCCFr+V1KfUqWK+AVBFLR8/AHuImjydVCli61TQEAQHIcOIe68g2Y9a9bGR87xSCOt5u2+fTOzH2Dmmb799exTenHXY+ZEXMYSe2nNTOD6dtpXoqolis1PuPPtfD0gSyruYrOU1hLe3E2P/cKVdwfLPq5jR5qe3/fmJrRldVVcsawOgwGAjd6fzvD2oQ8gASMhRmhJxdUMYNlhsslG97Tj4q5e9qn4Vr2JufmZTTa7px/IWpsQUWzBvw3IBMpiACnqLWYgpTIUD8eTo4goD1NO9kbBILUi5m1LFlMZc/MXF6Ilw1qvcLfReDry49X3h8t1GgeX94NqTMQZoueT939ddTXd+OfHtR+qYEv9tWD9dHTk57Oq8sem9ogMx5PjWTdFsafj4pqaOczAkVswZyWViwvR293vF3uDvw9fwEjFZSwxwcq5ijxTyC3YX7r0//AiS6U1RR3+1/xqkyecgeq608D8asOwMHjViiw0QzDzz56HsG3tnhFCa9eW1gsz/qmiVow2bwsDEWt72jW5SBSRO+RyS8h1On9lRG2jDUShka9jFHxI7rY0MJkfrLH6aue/3Nn6cDxh2/SpDuzz/kmHmfEIWrwvFUgkJGcAAAAASUVORK5CYII="/>
+  </svg>
+  
+        <span class="header-cart-qty-container hide">
+          0
+        </span>
+      </a>
+    </div>
+  </div>
+  
+  <nav role="navigation" class="mobile-menu js-mobile-menu">
+  <!--div id="MobileSearch">
+    <div class="mobileSearch__container">
+    <form>
+        <input placeholder="Search..." type="text" name="q" class="searchq_input" id="searchq" />
+    </form>
+        <div class="search" id="searchq">
+            <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25" version="1.1">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search" transform="translate(-275.000000, -25.000000)">
+            <g transform="translate(275.000000, 25.000000)">
+                <circle id="Oval" stroke="#0057B8" stroke-width="2" cx="10.2" cy="10.2" r="9.2"/>
+                <line x1="18" y1="16.8" x2="24.8" y2="23.55" id="Line" stroke="#0057B8" stroke-width="2" stroke-linecap="round"/>
+            </g>
+        </g>
+    </g>
+</svg>
+        </div>
+    </div>
+</div-->
+  
+    
+    
+    
+
+    
+      
+        <div class="mobile-header-link" data-mobile-navigation-item="6820a741-6233-46ce-821f-7fe7ebb4314d">
+          <span class="header-link-inner">Shop</span>
+
+          <span class="header-link-inner-arrow"></span>
+        </div>
+      
+    
+
+    
+      <div class="header-link__mega-menu" data-mobile-megamenu="6820a741-6233-46ce-821f-7fe7ebb4314d">
+        <div class="megamenu-columns-container">
+          <div class="megamenu-column megamenu-column--mobile">                
+            
+              <a href="/collections/shop-all" class="megamenu-column__link">Shop All</a>
+            
+              <a href="/collections/bracelets" class="megamenu-column__link">All Bracelets</a>
+            
+              <a href="/collections/bracelets-jewelry" class="megamenu-column__link">All Jewelry</a>
+            
+              <a href="/products/clean-ocean-club" class="megamenu-column__link">Bracelet Subscriptions</a>
+            
+              <a href="/collections/necklaces" class="megamenu-column__link">Necklaces</a>
+            
+              <a href="/collections/anklets" class="megamenu-column__link">Anklets</a>
+            
+              <a href="/collections/new-products" class="megamenu-column__link">New Arrivals</a>
+            
+              <a href="/collections/apparel" class="megamenu-column__link">Apparel</a>
+            
+              <a href="/collections/beach-gear" class="megamenu-column__link">Beach Gear</a>
+            
+              <a href="/collections/single-use-alternatives" class="megamenu-column__link">Clean Living Collection</a>
+            
+              <a href="/collections/bags" class="megamenu-column__link">Bags</a>
+            
+              <a href="/collections/drinkware" class="megamenu-column__link">Drinkware</a>
+            
+              <a href="/collections/cleanup-gear" class="megamenu-column__link">Cleanup Gear</a>
+            
+              <a href="/collections/accessories" class="megamenu-column__link">Accessories</a>
+            
+              <a href="/products/4ocean-gift-cards" class="megamenu-column__link">Gift Cards</a>
+            
+              <a href="/collections/clearance" class="megamenu-column__link">Clearance</a>
+            
+              <a href="/products/pound-plus" class="megamenu-column__link">Pound+</a>
+            
+          </div>
+        </div>
+      </div>
+     
+  
+    
+    
+    
+
+    
+      
+        <a href="/pages/cariuma-x-4ocean" class="mobile-header-link">
+          <span class="header-link-inner">Cariuma Collaboration</span>
+        </a>
+      
+    
+
+     
+  
+    
+    
+    
+
+    
+      
+        <a href="/pages/osborne-reef" class="mobile-header-link">
+          <span class="header-link-inner">Osborne Reef</span>
+        </a>
+      
+    
+
+     
+  
+    
+    
+    
+
+    
+      
+        <a href="/products/ocean-bracelet-stack" class="mobile-header-link">
+          <span class="header-link-inner">New! Ocean Bracelet Stack</span>
+        </a>
+      
+    
+
+     
+  
+    
+    
+    
+
+    
+      
+        <div class="mobile-header-link" data-mobile-navigation-item="4909d51a-0f92-4e00-b601-056b2cb10b69">
+          <span class="header-link-inner">Dune Jewelry Collection</span>
+
+          <span class="header-link-inner-arrow"></span>
+        </div>
+      
+    
+
+    
+      <div class="header-link__mega-menu" data-mobile-megamenu="4909d51a-0f92-4e00-b601-056b2cb10b69">
+        <div class="megamenu-columns-container">
+          <div class="megamenu-column megamenu-column--mobile">                
+            
+              <a href="/pages/dune-jewelry" class="megamenu-column__link">Dune Jewelry Collection</a>
+            
+              <a href="/collections/dune-rings" class="megamenu-column__link">Dune Boho Stack Rings</a>
+            
+              <a href="/collections/dune-bracelets" class="megamenu-column__link">Dune Rope Cuff Bracelets</a>
+            
+              <a href="/collections/dune-necklaces" class="megamenu-column__link">Dune Wave Necklaces</a>
+            
+          </div>
+        </div>
+      </div>
+     
+  
+    
+    
+    
+
+    
+      
+        <a href="/pages/reef-bracelet-of-the-month-june-2022" class="mobile-header-link">
+          <span class="header-link-inner">Limited Edition - Mesoamerican Reef Bracelets</span>
+        </a>
+      
+    
+
+     
+  
+    
+    
+    
+
+    
+      
+        <div class="mobile-header-link" data-mobile-navigation-item="7ee2fa49-cafb-476d-97f7-2a030aa875af">
+          <span class="header-link-inner">Bracelets</span>
+
+          <span class="header-link-inner-arrow"></span>
+        </div>
+      
+    
+
+    
+      <div class="header-link__mega-menu" data-mobile-megamenu="7ee2fa49-cafb-476d-97f7-2a030aa875af">
+        <div class="megamenu-columns-container">
+          <div class="megamenu-column megamenu-column--mobile">                
+            
+              <a href="/collections/bracelets" class="megamenu-column__link">All Bracelets</a>
+            
+              <a href="/products/clean-ocean-club" class="megamenu-column__link">Bracelet Subscriptions</a>
+            
+              <a href="/products/ocean-bracelet-stack" class="megamenu-column__link">New! Ocean Bracelet Stack</a>
+            
+              <a href="/pages/reef-bracelet-of-the-month-june-2022" class="megamenu-column__link">Limited Edition- Mesoamerican Reef Bracelets</a>
+            
+              <a href="/collections/guatemala-bracelets" class="megamenu-column__link">Guatemala Bracelets</a>
+            
+              <a href="/collections/bali-bracelets" class="megamenu-column__link">Bali Bracelets</a>
+            
+              <a href="/pages/osborne-reef" class="megamenu-column__link">Osborne Reef Bracelet</a>
+            
+              <a href="/collections/ocean-drop-bracelets" class="megamenu-column__link">Ocean Drop Bracelets</a>
+            
+              <a href="/collections/beaded-bracelet" class="megamenu-column__link">Beaded Bracelets</a>
+            
+              <a href="/collections/braided-bracelet" class="megamenu-column__link">Braided Bracelets </a>
+            
+              <a href="/collections/7-bead-braided" class="megamenu-column__link">7 Bead Braided</a>
+            
+              <a href="/collections/10-bead-braided" class="megamenu-column__link">10 Bead Braided</a>
+            
+              <a href="/collections/pound-pack" class="megamenu-column__link">2-Pound Packs</a>
+            
+              <a href="/collections/bracelet-collections" class="megamenu-column__link">Bracelet Box Sets</a>
+            
+          </div>
+        </div>
+      </div>
+     
+  
+    
+    
+    
+
+    
+      
+        <a href="/collections/anklets" class="mobile-header-link">
+          <span class="header-link-inner">Anklets</span>
+        </a>
+      
+    
+
+     
+  
+    
+    
+    
+
+    
+      
+        <a href="/collections/necklaces" class="mobile-header-link">
+          <span class="header-link-inner">Necklaces</span>
+        </a>
+      
+    
+
+     
+  
+    
+    
+    
+
+    
+      
+        <div class="mobile-header-link" data-mobile-navigation-item="8e79b14a-dd17-43ad-9986-e35e572ada3c">
+          <span class="header-link-inner">Sterling Silver Jewelry</span>
+
+          <span class="header-link-inner-arrow"></span>
+        </div>
+      
+    
+
+    
+      <div class="header-link__mega-menu" data-mobile-megamenu="8e79b14a-dd17-43ad-9986-e35e572ada3c">
+        <div class="megamenu-columns-container">
+          <div class="megamenu-column megamenu-column--mobile">                
+            
+              <a href="/pages/dune-jewelry" class="megamenu-column__link">Dune Jewelry Collection</a>
+            
+              <a href="/pages/4ocean-sterling-silver-necklace-and-earrings-with-recycled-ocean-plastic" class="megamenu-column__link">4ocean Sterling Silver Jewelry</a>
+            
+              <a href="/collections/sterling-silver-necklaces" class="megamenu-column__link">Sterling Silver Necklaces</a>
+            
+              <a href="/products/4ocean-sterling-silver-stud-earrings" class="megamenu-column__link">Sterling Silver Earrings</a>
+            
+              <a href="/collections/dune-rings" class="megamenu-column__link">Sterling Silver Rings</a>
+            
+              <a href="/products/sterling-silver-necklace-earring-set" class="megamenu-column__link">Sterling Silver Necklace & Earrings Set</a>
+            
+              <a href="/collections/sterling-silver-jewelry" class="megamenu-column__link">All Sterling Silver Jewelry</a>
+            
+          </div>
+        </div>
+      </div>
+     
+  
+    
+    
+    
+
+    
+      
+        <div class="mobile-header-link" data-mobile-navigation-item="8c04c29d-d51a-43e3-b425-851a893b647b">
+          <span class="header-link-inner">About Us</span>
+
+          <span class="header-link-inner-arrow"></span>
+        </div>
+      
+    
+
+    
+      <div class="header-link__mega-menu" data-mobile-megamenu="8c04c29d-d51a-43e3-b425-851a893b647b">
+        <div class="megamenu-columns-container">
+          <div class="megamenu-column megamenu-column--mobile">                
+            
+              <a href="/pages/about" class="megamenu-column__link">About Us</a>
+            
+              <a href="/pages/our-story" class="megamenu-column__link">Our Story</a>
+            
+              <a href="/blogs/blog" class="megamenu-column__link">Blog</a>
+            
+              <a href="/pages/4ocean-sea-life-encounters-rescues-and-releases" class="megamenu-column__link">Sea Life Encounters</a>
+            
+              <a href="/pages/sustainable-fishing" class="megamenu-column__link">Sustainable Fishing</a>
+            
+              <a href="/pages/our-impact" class="megamenu-column__link">Our Impact</a>
+            
+              <a href="/pages/pounds-pulled-from-the-ocean" class="megamenu-column__link">20 Million Pounds Pulled</a>
+            
+              <a href="/pages/cleanup-operations" class="megamenu-column__link">Cleanup Operations</a>
+            
+          </div>
+        </div>
+      </div>
+     
+  
+    
+    
+    
+
+    
+      
+        <div class="mobile-header-link" data-mobile-navigation-item="d3582e84-8ba0-45c1-989a-2e2558b39614">
+          <span class="header-link-inner">Join Us</span>
+
+          <span class="header-link-inner-arrow"></span>
+        </div>
+      
+    
+
+    
+      <div class="header-link__mega-menu" data-mobile-megamenu="d3582e84-8ba0-45c1-989a-2e2558b39614">
+        <div class="megamenu-columns-container">
+          <div class="megamenu-column megamenu-column--mobile">                
+            
+              <a href="https://www.4oceanpartnerships.com/" class="megamenu-column__link">Partner with 4ocean</a>
+            
+              <a href="https://www.4ocean.com/pages/ambassadors" class="megamenu-column__link">Become an Ambassador</a>
+            
+              <a href="https://www.4oceanpartnerships.com/pages/intern-program" class="megamenu-column__link">Internships</a>
+            
+              <a href="/pages/careers" class="megamenu-column__link">Careers</a>
+            
+          </div>
+        </div>
+      </div>
+     
+  
+
+  <div class="menu-separator"></div>
+
+  
+    <a href="/account" class="mobile-header-link mobile-header-link--account">Login</a>
+  
+
+  <div class="currency-selector">
+<span style="display:none;" class="BOLD-mc-picker-mnt " data-open="down" data-bold-mc-picker-mnt></span>
+</div>
+</nav>
+</div>
+
+<div class="mobile-menu-search-bar-new">
+  <div class="header-inner-container main-container">
+    <form>
+      <input placeholder="Search..." type="text" name="q" id="searchq" />
+      <span><button type="submit"><svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="26px" height="25px" viewBox="0 0 26 25" version="1.1">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="search" transform="translate(-275.000000, -25.000000)">
+            <g transform="translate(275.000000, 25.000000)">
+                <circle id="Oval" stroke="#0057B8" stroke-width="2" cx="10.2" cy="10.2" r="9.2"/>
+                <line x1="18" y1="16.8" x2="24.8" y2="23.55" id="Line" stroke="#0057B8" stroke-width="2" stroke-linecap="round"/>
+            </g>
+        </g>
+    </g>
+</svg></button></span>
+    </form>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    console.log('READY');
+    const searchq = $('.mobile-menu-search-bar-new form #searchq');
+    console.log(searchq);
+    searchq.on('input', function() {
+      console.log('CHANGED');
+      const popout = $('#popout-closed').length;
+      console.log('POPOUT', popout);
+      if (!popout) {
+        $('#klevuSearchingArea').prepend('<span class="popout-close" id="popout-closed">&times;</span>');
+        console.log('READY TO CLOSED')
+        const closedPopout = $('#popout-closed');
+        $(closedPopout).on('click',function(){
+          console.log('POPOUT CLOSED')
+          $('.klevu-fluid #klevuSearchingArea').hide();
+        });
+      }
+    });
+
+    const windowViewport = $(window).width();
+
+    $(window).on('resize', function() {
+      if ($(this).width() !== windowViewport) {
+        $('#klevu-pt-rs-hover').hide();
+        $('.klevu-fluid #klevuSearchingArea').hide();
+      }
+    });
+
+    $('#searchq').click(function(event){
+      event.stopPropagation();
+      //event.preventDefault();
+      //return false;
+    });
+
+    $('#klevu-pt-rs-hover').show(function(event){
+      event.stopPropagation();
+    })
+
+    $('body').click(function(event){
+      
+      //$('#klevu-pt-rs-hover').css('display','none');
+      
+    });
+
+
+  });
+</script>
+
+
+
+</div><!-- END static -->
+
+        <!-- BEGIN static --><div id="shopify-section-discount-banner-home" class="shopify-section">
+	<section class="discount-banner-main-container discount-banner-home-container">
+		<div class="discount-banner-outer-container">
+			<div class="discount-banner-inner-container">
+				<p class="discount-banner-text">FREE 4ocean Cleanup Bag with orders $50+. Discount applied at checkout. Expires 6/30. Limit one per transaction.</p>
+        
+          <a class="discount-banner-button" href="https://www.4ocean.com/FreeBeachBag">Click to Claim</a>
+        
+			</div>
+		</div>
+	</section>
+
+
+</div><!-- END static -->
+            
+        <main id="MainContent" role="main">
+            <div class="form-success hide" data-reset-success>
+    We&#39;ve sent you an email with a link to update your password.
+</div>
+
+<div class="main-container" data-login-form>
+    <div class="grid mainContainer">
+        <div class="grid__item large-up--five-twelfths large-up--push-one-twelfth xlarge-up--one-quarter xlarge-up--push-one-sixth">
+            <h1>Sign in</h1>
+        </div>
+    </div>
+    <div class="grid mainContainer">
+        <div class="grid__item large-up--five-twelfths large-up--push-one-twelfth xlarge-up--one-third xlarge-up--push-one-sixth">
+            
+            <form method="post" action="/account/login" id="customer_login" accept-charset="UTF-8"><input type="hidden" name="form_type" value="customer_login" /><input type="hidden" name="utf8" value="✓" />
+                <!--  -->
+                
+                <ul class="sign-in-col">
+                    <li>
+                        <label for="CustomerEmail">
+                            Email Address:
+                        </label>
+                        <input type="email" name="customer[email]" id="CustomerEmail" class="" placeholder="Email" spellcheck="false" autocomplete="on" autocapitalize="off" autofocus/>
+                    </li>
+
+                    
+                        <li>
+                            <label for="CustomerPassword">
+                                Password:
+                            </label>
+                            <input type="password" name="customer[password]" id="CustomerPassword" class="" placeholder="Password"/>
+                        </li>
+                    
+
+                    <li class="sign-in-btn">
+                        <button class="btn btn--primary btn--gray btn--gray__1" type="submit">
+                            Sign in
+                        </button>
+                    </li>
+                    
+                        <li class="recover-link">
+                            <a class="btn btn--link" data-recover-toggle href="/account/login#recover" id="RecoverPassword">Forgot your password?</a>
+                        </li>
+                    
+                    <li class="guest-checkout">
+                        
+                    </li>
+                </ul>
+            <input type="hidden" name="return_url" value="/account" /></form>
+        </div>
+        <div class="grid__item large-up--five-twelfths large-up--push-one-twelfth xlarge-up--one-third xlarge-up--push-one-sixth create-account-col">
+            <div class="create-account-col--inner">
+                <h3>New Customer?</h3>
+                <p>Create an account with us and you'll be able to:</p>
+                <ul>
+                    <li>Check out faster</li>
+                    <li>Save multiple shipping addresses</li>
+                    <li>Access your order history</li>
+                    <li>Track new orders</li>
+                    <li>Save items to your Wish List</li>
+                    <div>
+                        <a class="btn--gray btn--gray__2" href="/account/register">
+                            Create Account</a>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="hide grid mainContainer" data-recover-form>
+    <div class="grid__item small--ten-twelfths small--push-one-twelfth large-up--push-one-twelfth large-up--ten-twelfths">
+        <h2>Reset your password</h2>
+        <p>We will send you an email to reset your password.</p>
+
+        <form method="post" action="/account/recover" accept-charset="UTF-8"><input type="hidden" name="form_type" value="recover_customer_password" /><input type="hidden" name="utf8" value="✓" />
+            <!--  -->
+            
+
+            
+
+            <label class="label-hidden" for="RecoverEmail">
+                Email
+            </label>
+            <input type="email" name="email" id="RecoverEmail" placeholder="Email" spellcheck="false" autocomplete="off" autocapitalize="off"/>
+
+            <input class="button btn--gray" type="submit" value="Reset Password"/>
+
+            <a class="cancel-reset" data-recover-toggle type="button">
+                Cancel
+            </a>
+        </form>
+    </div>
+</div>
+
+            
+            <div id="SearchModal">
+    <div class="searchModal__container main-container">
+    <form>
+        <input placeholder="Search..." type="text" name="q" id="searchq" />
+    </form>
+        <div id="SearchModal-close">
+            <i class="mobile-menu-close-icon"></i>
+        </div>
+    </div>
+</div>
+        </main>
+
+        <!-- BEGIN static --><div id="shopify-section-footer" class="shopify-section"><footer class="footer-main-container" style="background-color: #0057b8; color: #ffffff;">
+    <div class="footer-main-inner-container main-container">
+        <div class="footer-top-content-container">
+            <div class="footer-social-logo-container"><div class="footer-block__newsletter"><h3 class="footer-block__heading">Join the Clean Ocean Movement</h3><div class="footer-block__newsletter_form">
+                    <form method="post" action="https://us-central1-ocean-bluecore.cloudfunctions.net/emailSignup" id="contact_form_footer" accept-charset="UTF-8" class="contact-form" tabindex="-1">
+                    <input type="hidden" name="contact[tags]" value="newsletter">
+                    <div class="newsletter-form__field-wrapper">
+                    <div class="field">
+                        <input
+                        id="Email_footer"
+                        type="email"
+                        name="contact[email]"
+                        class="field__input"
+                        value=""
+                        aria-required="true"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        autocomplete="email"
+                        
+                        placeholder="Enter Your Email"
+                        required
+                        >
+                    </div>
+                    <button class="submit-section" type="submit">
+                       <svg id="Navigation" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="50" height="40" viewBox="0 0 50 50">
+    <defs>
+      <style>
+        .cls-1 {
+          font-size: 20px;
+        }
+  
+        .cls-1, .cls-11, .cls-12, .cls-17, .cls-5, .cls-9 {
+          fill: #fff;
+        }
+  
+        .cls-1, .cls-11, .cls-13, .cls-3, .cls-4, .cls-6, .cls-7, .cls-9 {
+          text-anchor: middle;
+        }
+  
+        .cls-1, .cls-13 {
+          font-family: "Aktiv Grotesk";
+        }
+  
+        .cls-1, .cls-10, .cls-12, .cls-16, .cls-17, .cls-4, .cls-7 {
+          font-weight: 500;
+        }
+  
+        .cls-2 {
+          fill: none;
+          stroke-width: 0.909px;
+        }
+  
+        .cls-14, .cls-2 {
+          stroke: #0057b8;
+        }
+  
+        .cls-14, .cls-2, .cls-5 {
+          fill-rule: evenodd;
+        }
+  
+        .cls-12, .cls-15, .cls-16, .cls-3, .cls-4, .cls-6 {
+          font-size: 24px;
+        }
+  
+        .cls-13, .cls-14, .cls-4 {
+          fill: #0057b8;
+        }
+  
+        .cls-12, .cls-16, .cls-17, .cls-4, .cls-6, .cls-7, .cls-8, .cls-9 {
+          font-family: "Slate Pro";
+        }
+  
+        .cls-13, .cls-6, .cls-8, .cls-9 {
+          font-weight: 700;
+        }
+  
+        .cls-11, .cls-17, .cls-7 {
+          font-size: 18px;
+        }
+  
+        .cls-7 {
+          fill: #333;
+        }
+  
+        .cls-13, .cls-8 {
+          font-size: 36px;
+        }
+  
+        .cls-9 {
+          font-size: 37.5px;
+        }
+  
+        .cls-10 {
+          font-size: 30px;
+        }
+  
+        .cls-11 {
+          font-family: Arial;
+          text-decoration: underline;
+        }
+  
+        .cls-14 {
+          stroke-width: 1px;
+        }
+  
+        .cls-16 {
+          fill: #666;
+        }
+      </style>
+      <path id="text-path"/>
+    </defs>
+    <image width="50" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAfElEQVRoge3aIQ6AMAAEwaOpIkHw/+/hEbVNSqp4AGZLdl9w428bY1xJjqxdq0nOJPvikFqSdMCQr/Wy9v43IbSE0BJCSwgtIbSE0BJCSwgtIbSE0BJCSwgtIbSE0BJCSwgtIbSE0BJCSwgtIbSE0JqQ+gNHnYh7+atT0h6BCQpGdG4sCQAAAABJRU5ErkJggg=="/>
+    <image id="Layer_0" data-name="Layer 0" width="50" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAfklEQVRoge3aoQ2AMABE0aOpIkEwHasyEB5RW0GqGADzS/6f4J6/Jcd5Jdkyd60m2ZOsk0NqSdIBQ77Wy9z734TQEkJLCC0htITQEkJLCC0htITQEkJLCC0htITQEkJLCC0htITQEkJLCC0htITQEkJrQOoPHHUg7umvTkl7AL5dCFg//nNkAAAAAElFTkSuQmCC"/>
+    <text id="SHOP_GIFT_GUIDE_BRACELETS_FACE_MASKS" data-name="SHOP          GIFT GUIDE          BRACELETS          FACE MASKS" class="cls-1" transform="translate(-568.18 -4566.365) scale(0.909)"><tspan x="0">SHOP          GIFT GUIDE          BRACELETS          FACE MASKS &amp; FRAMES          CLEAN OCEAN CLUB         ABOUT US          OPERATIONS          PARTNER WITH US</tspan></text>
+    <path id="Search_Box" data-name="Search Box" class="cls-2" d="M-273.636-4679.09H-30.909V-4650H-273.636v-29.09Z"/>
+    <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-4" x="0">SEARCH</tspan></textPath></text>
+    <g id="HCR">
+      <path id="White_Box" data-name="White Box" class="cls-5" d="M-1328.18-3503.64h363.635v238.19H-1328.18v-238.19Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">Hawaian Coral Ref Beaded Bracelet</tspan></textPath></text>
+      <text id="Pulls_one_pound_of_trash_from_the_ocean_rivers_coastlines" data-name="Pulls one pound of trash from the ocean, rivers &amp; coastlines" class="cls-7" transform="translate(-1140.91 -3347.275) scale(0.909)"><tspan x="0">Pulls one pound of trash from the</tspan><tspan x="0" dy="21.6">ocean, rivers &amp; coastlines</tspan></text>
+    </g>
+    <g id="Cleanup_Kit" data-name="Cleanup Kit">
+      <path id="White_Box-2" data-name="White Box" class="cls-5" d="M-953.636-3503.64H-590v238.19H-953.636v-238.19Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">Cleanup Kit</tspan></textPath></text>
+      <text id="Pulls_four_pounds_of_trash_from_the_ocean_rivers_coastlines" data-name="Pulls four pounds of trash from the ocean, rivers &amp; coastlines" class="cls-7" transform="translate(-766.365 -3347.275) scale(0.909)"><tspan x="0">Pulls four pounds of trash from the</tspan><tspan x="0" dy="21.6">ocean, rivers &amp; coastlines</tspan></text>
+    </g>
+    <g id="Jewelry">
+      <path id="White_Box-3" data-name="White Box" class="cls-5" d="M-575.455-3503.64h363.637v238.19H-575.455v-238.19Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">Necklace and Earring Set</tspan></textPath></text>
+      <text id="Pulls_two_pounds_of_trash_from_the_ocean_rivers_coastlines" data-name="Pulls two pounds of trash from the ocean, rivers &amp; coastlines" class="cls-7" transform="translate(-388.182 -3347.275) scale(0.909)"><tspan x="0">Pulls two pounds of trash from the</tspan><tspan x="0" dy="21.6">ocean, rivers &amp; coastlines</tspan></text>
+    </g>
+    <g id="Cariuma">
+      <path id="White_Box-4" data-name="White Box" class="cls-5" d="M-199.091-3503.64H164.545v238.19H-199.091v-238.19Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">4ocean x Cariuma IBI High Tops</tspan></textPath></text>
+      <text id="Pulls_four_pounds_of_trash_from_the_ocean_rivers_coastlines-2" data-name="Pulls four pounds of trash from the ocean, rivers &amp; coastlines" class="cls-7" transform="translate(-11.818 -3347.275) scale(0.909)"><tspan x="0">Pulls four pounds of trash from the</tspan><tspan x="0" dy="21.6">ocean, rivers &amp; coastlines</tspan></text>
+    </g>
+    <text id="NEW_ARRIVALS" data-name="NEW ARRIVALS" class="cls-8" transform="translate(-1315.455 -3864.545) scale(0.909)">NEW ARRIVALS</text>
+    <text id="Raise_Awareness_Raise_awareness_of_the_ocean_plastic_crisis_thr" data-name="Raise Awareness Raise awareness of the ocean plastic crisis thr" class="cls-9" transform="translate(-1099.545 -2890.285) scale(0.909)"><tspan x="0">Raise Awareness</tspan><tspan class="cls-10" x="0" dy="48">Raise awareness of the ocean</tspan><tspan class="cls-10" x="0" dy="30">plastic crisis through the sale of</tspan><tspan class="cls-10" x="0" dy="30">4ocean products</tspan></text>
+    <text id="One_Pound_Promise_For_every_product_sold_we_promise_to_pull_on" data-name="One Pound Promise For every product sold, we promise to pull on" class="cls-9" transform="translate(-577.725 -2890.285) scale(0.909)"><tspan x="0">One Pound Promise</tspan><tspan class="cls-10" x="0" dy="48">For every product sold,</tspan><tspan class="cls-10" x="0" dy="30">we promise to pull one pound</tspan><tspan class="cls-10" x="0" dy="30">of trash from the ocean,</tspan><tspan class="cls-10" x="0" dy="30">rivers and coastlines</tspan></text>
+    <text id="Re-invest_in_Ocean_Cleanup_Develop_new_and_innovative_products_" data-name="Re-invest in Ocean Cleanup Develop new and innovative products," class="cls-9" transform="translate(-68.636 -2890.285) scale(0.909)"><tspan x="0">Re-invest in Ocean Cleanup</tspan><tspan class="cls-10" x="0" dy="48">Develop new and innovative</tspan><tspan class="cls-10" x="0" dy="30">products, open new cleanup</tspan><tspan class="cls-10" x="0" dy="30">locations and hire more captains</tspan><tspan class="cls-10" x="0" dy="30">&amp; crews to help clean the ocean</tspan></text>
+    <g id="Jewelry-2" data-name="Jewelry">
+      <path id="White_Box-5" data-name="White Box" class="cls-5" d="M-1328.18-2234.55h363.635v161.82H-1328.18v-161.82Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">Bracelets &amp; Jewelry</tspan></textPath></text>
+      <text id="Start_a_conversation_about_the_clean_ocean_movement_with_a_4oc" data-name="Start a conversation about the clean  ocean movement with a 4oc" class="cls-7" transform="translate(-1140.91 -2160.005) scale(0.909)"><tspan x="0">Start a conversation about the clean </tspan><tspan x="0" dy="21.6">ocean movement with a 4ocean</tspan><tspan x="0" dy="21.6">bracelet, necklace or earrings</tspan></text>
+    </g>
+    <g id="Cleanup_Gear" data-name="Cleanup Gear">
+      <path id="White_Box-6" data-name="White Box" class="cls-5" d="M-953.636-2234.55H-590v161.82H-953.636v-161.82Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">Cleanup Gear</tspan></textPath></text>
+      <text id="Bring_purpose_to_every_outdoor_adventure_with_4ocean_Cleanup_Ge" data-name="Bring purpose to every outdoor adventure with 4ocean Cleanup Ge" class="cls-7" transform="translate(-766.365 -2160.005) scale(0.909)"><tspan x="0">Bring purpose to every outdoor adventure</tspan><tspan x="0" dy="21.6">with 4ocean Cleanup Gear! </tspan></text>
+    </g>
+    <g id="Apparel">
+      <path id="White_Box-7" data-name="White Box" class="cls-5" d="M-575.455-2234.55h363.637v161.82H-575.455v-161.82Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">Apparel</tspan></textPath></text>
+      <text id="Represent_the_clean_ocean_movement_and_pull_a_pound_with_100_G" data-name="Represent the clean ocean movement and pull a pound with 100% G" class="cls-7" transform="translate(-388.182 -2160.005) scale(0.909)"><tspan x="0">Represent the clean ocean movement</tspan><tspan x="0" dy="21.6">and pull a pound with 100% GOTS-</tspan><tspan x="0" dy="21.6">Certified Organic Cotton Apparel</tspan></text>
+    </g>
+    <g id="Reusables">
+      <path id="White_Box-8" data-name="White Box" class="cls-5" d="M-199.091-2234.55H164.545v161.82H-199.091v-161.82Z"/>
+      <text class="cls-3" transform="scale(0.909)"><textPath startOffset="50%" xlink:href="#text-path"><tspan class="cls-6" x="0">Reusables</tspan></textPath></text>
+      <text id="Stop_single-use_plastic_at_the_source_with_reusable_bags_bottl" data-name="Stop single-use plastic at the source with reusable bags, bottl" class="cls-7" transform="translate(-11.818 -2160.005) scale(0.909)"><tspan x="0">Stop single-use plastic at the source</tspan><tspan x="0" dy="21.6">with reusable bags, bottles, cups,</tspan><tspan x="0" dy="21.6">utensils and straws</tspan></text>
+    </g>
+    <text id="COLLECTIONS-2" data-name="COLLECTIONS" class="cls-8" transform="translate(-1315.455 -2595.455) scale(0.909)">COLLECTIONS</text>
+    <text id="View_Our_Impact" data-name="View Our Impact" class="cls-11" transform="translate(-576.365 -1700.91) scale(0.909)"><tspan x="0">View Our Impact</tspan></text>
+    <text id="Shop_Clean_Ocean_Club_Pound_Bracelets_Jewelry_Face_Mask_Fram" data-name="Shop Clean Ocean Club Pound+ Bracelets Jewelry Face Mask &amp; Fram" class="cls-12" transform="translate(-1291.82 -32.727) scale(0.909)">Shop<tspan x="0" dy="36">Clean Ocean Club</tspan><tspan x="0" dy="36">Pound+</tspan><tspan x="0" dy="36">Bracelets</tspan><tspan x="0" dy="36">Jewelry</tspan><tspan x="0" dy="36">Face Mask &amp; Frames</tspan><tspan x="0" dy="36">Apparel</tspan><tspan x="0" dy="36">Shoes</tspan><tspan x="0" dy="36">Drinkware</tspan><tspan x="0" dy="36">Beach Gear</tspan><tspan x="0" dy="36">Cleanup Gear</tspan><tspan x="0" dy="36">Accessories</tspan><tspan x="0" dy="36">Reusables</tspan></text>
+    <text id="Help_Center_Contact_Us_About_Us_Operations_Our_Impact_Blog_Care" data-name="Help Center Contact Us About Us Operations Our Impact Blog Care" class="cls-12" transform="translate(-1028.18 -32.727) scale(0.909)">Help Center<tspan x="0" dy="36">Contact Us</tspan><tspan x="0" dy="36">About Us</tspan><tspan x="0" dy="36">Operations</tspan><tspan x="0" dy="36">Our Impact</tspan><tspan x="0" dy="36">Blog</tspan><tspan x="0" dy="36">Careers</tspan><tspan x="0" dy="36">Shipping &amp; Returns</tspan><tspan x="0" dy="36">Press &amp; Media</tspan><tspan x="0" dy="36">Become an Ambassador</tspan><tspan x="0" dy="36">Wholesale</tspan><tspan x="0" dy="36">Find a Retailer</tspan></text>
+    <text id="_4ocean_Plastic_Partner_with_4ocean_Plastic_Offset_Program_Clean" data-name="4ocean Plastic Partner with 4ocean Plastic Offset Program Clean" class="cls-12" transform="translate(-728.18 -32.727) scale(0.909)">4ocean Plastic<tspan x="0" dy="36">Partner with 4ocean</tspan><tspan x="0" dy="36">Plastic Offset Program</tspan><tspan x="0" dy="36">Cleanup Equipment Sales</tspan><tspan x="0" dy="36">Pound+ Cleanup Service</tspan><tspan x="0" dy="36">Co-Branded Products</tspan><tspan x="0" dy="36">Recovered Materials</tspan><tspan x="0" dy="36">Beach Cleanup Sponsorships</tspan><tspan x="0" dy="36">Contract Cleanups</tspan><tspan x="0" dy="36">Custom Bracelet Partnerships</tspan></text>
+    <text id="Join_the_Clean_Ocean_Movement" data-name="Join the Clean Ocean Movement" class="cls-12" transform="translate(-373.637 -32.727) scale(0.909)">Join the Clean Ocean Movement</text>
+    <path id="email_box" data-name="email box" class="cls-5" d="M-375.455-1.818H61.818V50H-375.455V-1.818Z"/>
+    <text id="_" data-name="&gt;" class="cls-13" transform="translate(37.273 37.4) scale(0.909)"><tspan x="0">&gt;</tspan></text>
+    <path class="cls-14" d="M44.546,25.455v1.818H3.636V25.455H44.546Z"/>
+    <text class="cls-15" transform="scale(0.909)"><textPath xlink:href="#text-path"><tspan class="cls-16">Enter Your Email</tspan></textPath></text>
+    <text id="_Copyright_2021_4ocean_PBC._Cookie_P" data-name="© Copyright 2021 4ocean, PBC.                          Cookie P" class="cls-17" transform="translate(-1324.545 607.275) scale(0.909)">© Copyright 2021 4ocean, PBC.																										Cookie Policy          Privacy Policy          Terms of Use          Disclaimer</text>
+  </svg>
+  
+                    </button>
+                    </div>
+                    <h4 class="visually-hidden newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-success" viewBox="0 0 13 13">
+    <path d="M6.5 12.35C9.73087 12.35 12.35 9.73086 12.35 6.5C12.35 3.26913 9.73087 0.65 6.5 0.65C3.26913 0.65 0.65 3.26913 0.65 6.5C0.65 9.73086 3.26913 12.35 6.5 12.35Z" fill="#428445" stroke="white" stroke-width="0.7"/>
+    <path d="M5.53271 8.66357L9.25213 4.68197" stroke="white"/>
+    <path d="M4.10645 6.7688L6.13766 8.62553" stroke="white">
+  </svg>
+  Thank you for joining our mailing list. Check your email for our welcome message. Because of you, we're able to clean the ocean one pound at a time.</h4>
+                    <h4 class="visually-hidden newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-prev-signed-up" tabindex="-1"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
+    <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+    <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+    <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+    <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+  </svg>
+  Looks like you're already a subscriber! If you previously unsubscribed, we've resubscribed you!</h4>
+                    <h4 class="visually-hidden newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-subscribe-error" tabindex="-1"><svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
+    <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+    <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+    <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+    <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+  </svg>
+  Something went wrong, please try again.</h4>
+                    </form>
+                </div>
+                </div><div class="footer-social-icons-container">
+            
+                
+                    
+                    
+                    
+                    
+                        <div class="social-logos">
+                            <a href="https://www.facebook.com/4OceanBracelets/" title="4ocean on Facebook" target="_blank">
+                                <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" class="icon" viewBox="0 0 20 20"><path d="M18.05.811q.439 0 .744.305t.305.744v16.637q0 .439-.305.744t-.744.305h-4.732v-7.221h2.415l.342-2.854h-2.757v-1.83q0-.659.293-1t1.073-.342h1.488V3.762q-.976-.098-2.171-.098-1.634 0-2.635.964t-1 2.72V9.47H7.951v2.854h2.415v7.221H1.413q-.439 0-.744-.305t-.305-.744V1.859q0-.439.305-.744T1.413.81H18.05z"/></svg>
+
+                                <span class="icon-fallback-text">Facebook</span>
+                            </a>
+                        </div>
+                    
+                
+                    
+                    
+                    
+                    
+                        <div class="social-logos">
+                            <a href="https://twitter.com/4Ocean" title="4ocean on Twitter" target="_blank">
+                                <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" class="icon" viewBox="0 0 20 20"><path d="M19.551 4.208q-.815 1.202-1.956 2.038 0 .082.02.255t.02.255q0 1.589-.469 3.179t-1.426 3.036-2.272 2.567-3.158 1.793-3.963.672q-3.301 0-6.031-1.773.571.041.937.041 2.751 0 4.911-1.671-1.284-.02-2.292-.784T2.456 11.85q.346.082.754.082.55 0 1.039-.163-1.365-.285-2.262-1.365T1.09 7.918v-.041q.774.408 1.773.448-.795-.53-1.263-1.396t-.469-1.864q0-1.019.509-1.997 1.487 1.854 3.596 2.924T9.81 7.184q-.143-.509-.143-.897 0-1.63 1.161-2.781t2.832-1.151q.815 0 1.569.326t1.284.917q1.345-.265 2.506-.958-.428 1.386-1.732 2.18 1.243-.163 2.262-.611z"/></svg>
+
+                                <span class="icon-fallback-text">Twitter</span>
+                            </a>
+                        </div>
+                    
+                
+                    
+                    
+                    
+                    
+                        <div class="social-logos">
+                            <a href="https://www.pinterest.com/4oceanbracelets/" title="4ocean on Pinterest" target="_blank">
+                                <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" class="icon" viewBox="0 0 20 20"><path d="M9.958.811q1.903 0 3.635.744t2.988 2 2 2.988.744 3.635q0 2.537-1.256 4.696t-3.415 3.415-4.696 1.256q-1.39 0-2.659-.366.707-1.147.951-2.025l.659-2.561q.244.463.903.817t1.39.354q1.464 0 2.622-.842t1.793-2.305.634-3.293q0-2.171-1.671-3.769t-4.257-1.598q-1.586 0-2.903.537T5.298 5.897 4.066 7.775t-.427 2.037q0 1.268.476 2.22t1.427 1.342q.171.073.293.012t.171-.232q.171-.61.195-.756.098-.268-.122-.512-.634-.707-.634-1.83 0-1.854 1.281-3.183t3.354-1.329q1.83 0 2.854 1t1.025 2.61q0 1.342-.366 2.476t-1.049 1.817-1.561.683q-.732 0-1.195-.537t-.293-1.269q.098-.342.256-.878t.268-.915.207-.817.098-.732q0-.61-.317-1t-.927-.39q-.756 0-1.269.695t-.512 1.744q0 .39.061.756t.134.537l.073.171q-1 4.342-1.22 5.098-.195.927-.146 2.171-2.513-1.122-4.062-3.44T.59 10.177q0-3.879 2.744-6.623T9.957.81z"/></svg>
+
+                                <span class="icon-fallback-text">Pinterest</span>
+                            </a>
+                        </div>
+                    
+                
+                    
+                    
+                    
+                    
+                        <div class="social-logos">
+                            <a href="https://www.instagram.com/4ocean/" title="4ocean on Instagram" target="_blank">
+                                <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512" class="icon"><path d="M256 49.5c67.3 0 75.2.3 101.8 1.5 24.6 1.1 37.9 5.2 46.8 8.7 11.8 4.6 20.2 10 29 18.8s14.3 17.2 18.8 29c3.4 8.9 7.6 22.2 8.7 46.8 1.2 26.6 1.5 34.5 1.5 101.8s-.3 75.2-1.5 101.8c-1.1 24.6-5.2 37.9-8.7 46.8-4.6 11.8-10 20.2-18.8 29s-17.2 14.3-29 18.8c-8.9 3.4-22.2 7.6-46.8 8.7-26.6 1.2-34.5 1.5-101.8 1.5s-75.2-.3-101.8-1.5c-24.6-1.1-37.9-5.2-46.8-8.7-11.8-4.6-20.2-10-29-18.8s-14.3-17.2-18.8-29c-3.4-8.9-7.6-22.2-8.7-46.8-1.2-26.6-1.5-34.5-1.5-101.8s.3-75.2 1.5-101.8c1.1-24.6 5.2-37.9 8.7-46.8 4.6-11.8 10-20.2 18.8-29s17.2-14.3 29-18.8c8.9-3.4 22.2-7.6 46.8-8.7 26.6-1.3 34.5-1.5 101.8-1.5m0-45.4c-68.4 0-77 .3-103.9 1.5C125.3 6.8 107 11.1 91 17.3c-16.6 6.4-30.6 15.1-44.6 29.1-14 14-22.6 28.1-29.1 44.6-6.2 16-10.5 34.3-11.7 61.2C4.4 179 4.1 187.6 4.1 256s.3 77 1.5 103.9c1.2 26.8 5.5 45.1 11.7 61.2 6.4 16.6 15.1 30.6 29.1 44.6 14 14 28.1 22.6 44.6 29.1 16 6.2 34.3 10.5 61.2 11.7 26.9 1.2 35.4 1.5 103.9 1.5s77-.3 103.9-1.5c26.8-1.2 45.1-5.5 61.2-11.7 16.6-6.4 30.6-15.1 44.6-29.1 14-14 22.6-28.1 29.1-44.6 6.2-16 10.5-34.3 11.7-61.2 1.2-26.9 1.5-35.4 1.5-103.9s-.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2-6.4-16.6-15.1-30.6-29.1-44.6-14-14-28.1-22.6-44.6-29.1-16-6.2-34.3-10.5-61.2-11.7-27-1.1-35.6-1.4-104-1.4z"/><path d="M256 126.6c-71.4 0-129.4 57.9-129.4 129.4s58 129.4 129.4 129.4 129.4-58 129.4-129.4-58-129.4-129.4-129.4zm0 213.4c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84z"/><circle cx="390.5" cy="121.5" r="30.2"/></svg>
+
+                                <span class="icon-fallback-text">Instagram</span>
+                            </a>
+                        </div>
+                    
+                
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                
+                    
+                    
+                    
+                    
+                        <div class="social-logos">
+                            <a href="https://www.youtube.com/channel/UCCT_-OGW5IiUuuHwmuyUPYQ" title="4ocean on YouTube" target="_blank">
+                                <svg xmlns="https://www.w3.org/2000/svg" width="21" height="20" class="icon" viewBox="0 0 21 20"><path d="M-.196 15.803q0 1.23.812 2.092t1.977.861h14.946q1.165 0 1.977-.861t.812-2.092V3.909q0-1.23-.82-2.116T17.539.907H2.593q-1.148 0-1.969.886t-.82 2.116v11.894zm7.465-2.149V6.058q0-.115.066-.18.049-.016.082-.016l.082.016 7.153 3.806q.066.066.066.164 0 .066-.066.131l-7.153 3.806q-.033.033-.066.033-.066 0-.098-.033-.066-.066-.066-.131z"/></svg>
+
+                                <span class="icon-fallback-text">YouTube</span>
+                            </a>
+                        </div>
+                    
+                
+                    
+                    
+                    
+                    
+                        <div class="social-logos">
+                            <a href="https://vimeo.com/4ocean" title="4ocean on Vimeo" target="_blank">
+                                <svg xmlns="https://www.w3.org/2000/svg" width="20" height="20" class="icon" viewBox="0 0 20 20"><path d="M.215 6.814l.899 1.203q1.249-.929 1.508-.929.99 0 1.843 3.153l.746 2.826q.517 1.958.807 3.009 1.127 3.153 2.833 3.153 2.712 0 6.581-5.21 3.793-4.951 3.93-7.83v-.335q0-3.504-2.803-3.595h-.213q-3.763 0-5.179 4.616.823-.35 1.432-.35 1.295 0 1.295 1.341 0 .168-.015.35-.091 1.082-1.28 2.955-1.219 1.965-1.813 1.965-.792 0-1.401-2.986-.183-.701-.777-4.524-.259-1.645-.96-2.437-.609-.686-1.523-.701-.122 0-.259.015-.96.091-2.849 1.752-.975.914-2.803 2.559z"/></svg>
+
+                                <span class="icon-fallback-text">Vimeo</span>
+                            </a>
+                        </div>
+                    
+                
+                    
+                    
+                    
+                    
+                        <div class="social-logos">
+                            <a href="https://www.tiktok.com/@4ocean" title="4ocean on Tiktok" target="_blank">
+                                <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="20" height="20" class="icon" viewBox="0 0 20 20">
+    <image x="1" width="18" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAUCAYAAACAl21KAAABMElEQVQ4ja2UsSuFYRTGf6QvZZBJGQzKlXIzKSn7NVEMkoFZySSDzV9hYZKVzeYfQAqbxUCKJHUHV3n01ifH6X15L/ep8/We5z3n953vGw6ScmJJX7qV1Ol72slTYar6gHHflQvyWmsVaBrYagUoaBM4BzaAkY5/gIJGy6j8ZaIH4NKbMdAUsAPcA3OR+zegCswAx6X3bD9tADgCBo3XHQEV5QCHZbQF8xNUAa5M3oxkQbsO8gqcAKe5wNBcAyaMtw8sAu/NjBVAkya/ABYidQ2XyxeEn9Zr8rPEC7vMuZ4CvZi8PwEaM+fraIWkeX3XrFsRw+5+PbZ2wqOQdOOKtyXVJK1KejJ+XVJPChQiTJGj5dQStMnKL6Rwn9ym3qhKOpD0KKkh6U7SnqShH9exxAdZUIpFBcfItAAAAABJRU5ErkJggg=="/>
+  </svg>
+                                <span class="icon-fallback-text">Tiktok</span>
+                            </a>
+                        </div>
+                    
+                
+            </div>
+
+            </div>
+
+            <div class="footer-main-menus-container">
+                <ul class="footer-menu-container">
+                    <li class="footer-menu-header">
+                        SHOP 4OCEAN
+                    </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/shop-all">
+                                Shop
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/products/clean-ocean-club">
+                                Bracelet Subscriptions
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/bracelets">
+                                Bracelets
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/osborne-reef">
+                                Osborne Reef
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/anklets">
+                                Anklets
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/necklaces">
+                                Necklaces
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/sterling-silver-jewelry">
+                                Sterling Silver Jewelry
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/apparel">
+                                Apparel
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/beach-gear">
+                                Beach Gear
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/single-use-alternatives">
+                                Clean Living Collection
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/drinkware">
+                                Drinkware
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/bags">
+                                Bags
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/collections/accessories">
+                                Accessories
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/products/4ocean-gift-cards">
+                                Gift Cards
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/products/pound-plus">
+                                Pound +
+                            </a>
+                        </li>
+                    
+                </ul>
+                <ul class="footer-menu-container">
+                    <li class="footer-menu-header">
+                        ABOUT 4OCEAN
+                    </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="https://4oceanhelp-center.gorgias.help/en-US">
+                                Help Center
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/contact-4ocean">
+                                Contact Us
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/about">
+                                About Us
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/cleanup-operations">
+                                Cleanup Operations
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/our-impact">
+                                Our Impact
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/our-story">
+                                Our Story
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/pounds-pulled-from-the-ocean">
+                                20 Million Pounds Pulled
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/blogs/blog">
+                                Blog
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/4ocean-shipping">
+                                Shipping & Returns
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/press">
+                                Press & Media
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="https://wholesale.4ocean.com/account/login?_ga=2.166810489.659667767.1592835235-675425763.1587486189">
+                                Wholesale
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/store-locator">
+                                Find a Retailer
+                            </a>
+                        </li>
+                    
+                </ul>
+                <ul class="footer-menu-container">
+                    <li class="footer-menu-header">
+                        JOIN US
+                    </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="https://www.4oceanpartnerships.com/">
+                                Partner with 4ocean
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="https://www.4ocean.com/pages/ambassadors">
+                                Become an Ambassador
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="https://www.4oceanpartnerships.com/pages/intern-program">
+                                Internships
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a class="footer-menu-link" href="/pages/careers">
+                                Careers
+                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-helper-logo-container">
+            
+                
+                    <div class="footer-helper-logo-inner-container lazy-container">
+                        <img class="lazy" loading="lazy" src="//cdn.shopify.com/s/files/1/0996/1022/files/4ocean-footer-1-percent-for-the-planet_9fff4fb4-38c3-4091-896f-3f29b0811cfd_400x.png?v=1634600688" data-src="//cdn.shopify.com/s/files/1/0996/1022/files/4ocean-footer-1-percent-for-the-planet_9fff4fb4-38c3-4091-896f-3f29b0811cfd_800x.png?v=1634600688">
+                    </div>
+                
+            
+                
+                    <div class="footer-helper-logo-inner-container lazy-container">
+                        <img class="lazy" loading="lazy" src="//cdn.shopify.com/s/files/1/0996/1022/files/4ocean-footer-certified-b-corp_de2de17b-6a29-4de7-8076-ab1536f8f157_400x.png?v=1634600701" data-src="//cdn.shopify.com/s/files/1/0996/1022/files/4ocean-footer-certified-b-corp_de2de17b-6a29-4de7-8076-ab1536f8f157_800x.png?v=1634600701">
+                    </div>
+                
+            
+                
+                    <div class="footer-helper-logo-inner-container lazy-container">
+                        <img class="lazy" loading="lazy" src="//cdn.shopify.com/s/files/1/0996/1022/files/4ocean-footer-ocean-positive-climate-neutral_a00bf2eb-0a7b-4f57-9e9a-9d654e0741ac_400x.png?v=1634600717" data-src="//cdn.shopify.com/s/files/1/0996/1022/files/4ocean-footer-ocean-positive-climate-neutral_a00bf2eb-0a7b-4f57-9e9a-9d654e0741ac_800x.png?v=1634600717">
+                    </div>
+                
+            
+        </div>
+
+        <div class="subfooter-menu-copyright-container">
+            <ul class="subfooter-menu-container">
+                
+                    <li id="footer-link-Cookie Policy">
+                        <a class="subfooter-menu-link" href="/pages/cookie-policy">
+                            Cookie Policy
+                        </a>
+                    </li>
+                
+                    <li id="footer-link-Privacy Policy">
+                        <a class="subfooter-menu-link" href="/pages/4ocean-privacy-policy">
+                            Privacy Policy
+                        </a>
+                    </li>
+                
+                    <li id="footer-link-Terms of Use">
+                        <a class="subfooter-menu-link" href="/pages/4ocean-terms-of-service">
+                            Terms of Use
+                        </a>
+                    </li>
+                
+                    <li id="footer-link-Disclaimer">
+                        <a class="subfooter-menu-link" href="/pages/four-ocean-disclaimer">
+                            Disclaimer
+                        </a>
+                    </li>
+                
+            </ul>
+            <p class="subfooter-copyright">&copy; Copyright
+                2022</p>
+        </div>
+    </div>
+    
+    <a href="/pages/contact-4ocean">
+        <div class="ContactButton" id="ContactButton">
+            <img src="//cdn.shopify.com/s/files/1/0996/1022/files/icons8-important-mail-48_36x.png?v=1599761394" alt="">
+        </div>
+    </a>
+    
+</footer>
+
+
+
+<script>
+    $( document ).ready(function() {
+      $('#contact_form_footer').submit(function (e) {
+        e.preventDefault();
+    
+        var $form = $('#contact_form_footer');
+        var $email = $('#Email_footer').val()
+    
+        $.ajax({
+            url: $form.attr('action'), 
+            method: $form.attr('method'), 
+            data: { "email": $email }
+        }).done(function (response) {
+            //   $('#Email_footer').addClass('visually-hidden')
+              console.log(response)
+            if(response == '200') {
+              $('#ContactFooter-prev-signed-up').addClass('visually-hidden')
+              $("#ContactFooter-subscribe-error").addClass('visually-hidden')
+              $('#ContactFooter-success').removeClass('visually-hidden')
+            } else {
+              $('.form--error').removeClass('visually-hidden')
+                if (response == '422') {
+                    $('#ContactFooter-prev-signed-up').addClass('visually-hidden')
+                    $("#ContactFooter-subscribe-error").addClass('visually-hidden')
+                    $('#ContactFooter-prev-signed-up').removeClass('visually-hidden')
+              } else {
+                $('#ContactFooter-success').addClass('visually-hidden')
+                $('#ContactFooter-prev-signed-up').addClass('visually-hidden')
+                $("#ContactFooter-subscribe-error").removeClass('visually-hidden')
+              }
+            }
+        });
+      });
+    });
+    </script></div><!-- END static -->
+
+
+
+<script>
+    // ensure these are available to the global window, for use in the bootstrap js asset
+    window.BOLD_mc_bootstrapSettings = {
+        shopDomainUrl: 'https://mc.boldapps.net/4ocean.myshopify.com',
+        flagsAssetUrl: '//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/flags.min.css?v=98793953736531869691655397658',
+        pickerCssAssetUrl: '//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/bold-currency-picker.css?v=169087794963550946321655397648',
+        productOriginalPrice: ""
+    };
+</script>
+<script src="https://mc.boldapps.net/install_assets/bold.multicurrency.js" defer></script>
+<script src="//cdn.shopify.com/s/files/1/0996/1022/t/903/assets/bold-currency-bootstrap.js?v=74100307821941103121655397648" defer></script>
+<script type="text/template" id="bold-currency-picker-template">
+    <div class="BOLD-mc-picker multi">
+        <div class="currentCurrency loading" data-current-currency>
+            <span class="flag flag-loading" data-flag></span>
+            <span class="name" data-name>&bull;&bull;&bull;</span>
+            <span class="chevron">
+                <svg id="Capa_1" height="14" viewBox="0 0 551.13 551.13" width="14" xmlns="https://www.w3.org/2000/svg"><path d="m275.565 361.679-223.897-223.896h-51.668l275.565 275.565 275.565-275.565h-51.668z"/></svg>
+            </span>
+        </div>
+        <ul class="currencyList" data-currency-list></ul>
+    </div>
+</script>
+
+<script type="text/template" id="bold-currency-picker-mount-template">
+<span style="display:none;" class="BOLD-mc-picker-mnt " data-open="up" data-bold-mc-picker-mnt></span>
+</script>
+
+    <script type="text/javascript">
+      window.addEventListener('load', function(){
+
+        
+  function getPageType() {
+    
+    return 'Other';
+    
+  }
+  
+  
+  window.dataLayer.push({
+    "visitorType": "Guest"
+  });
+  
+  
+  
+  window.dataLayer.push({
+    "pageType": "other"
+  });
+  
+
+
+        
+
+        
+
+        
+
+        
+
+        Array.prototype.slice.call(document.querySelectorAll('a[href*="/products/"]'))
+          .forEach(function(select) {
+            select.addEventListener('click', handleProductClick);
+          });
+
+        function getClickedProductHandle(element) {
+          var arr = element.href.split('/products/');
+          return arr[arr.length-1];
+        }
+
+        function handleProductClick(event) {
+          if(typeof allProducts == "undefined") return;
+          var target = event.target.matches('a[href*="/products/"]')
+            ? event.target
+            : event.target.closest('a[href*="/products/"]');
+          var handle = getClickedProductHandle(target);
+          var clickedProduct = allProducts.filter(function(product) {
+            return product.handle === handle;
+          });
+          if (clickedProduct[0]) delete clickedProduct[0].list;
+          if (clickedProduct[0]) delete clickedProduct[0].handle;
+          window.dataLayer.push({
+            "event": "productClick",
+            "ecommerce": {
+              currencyCode: "USD",
+              "click": {
+                "actionField": {"list": getPageType()},
+                "products": clickedProduct
+
+              }
+            },
+          });
+        }
+      }, false);
+    </script>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPV7BLZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+       <script src="https://js.klevu.com/klevu-js-v1/customizations/klevu-user-customization-160528098235812957.js" type="text/javascript"></script> 
+    
+
+
+<script id="pre-order-helper">
+    var _PREORDERConfig = _PREORDERConfig || {};
+
+    _PREORDERConfig = {
+      "preorder_app_hostname": "preorder.shopyshaper.com",
+      "instock_qty_level": 1,
+      "preorder_enabled": true,
+      "require_inventory_management": true,
+      "ignore_duplicate_skus": false,
+      "generic_trigger_handler": true,
+      "button": {
+                "caption": "Add to my cart",
+                "widget_button_enabled": true
+      },
+      "selectors": {
+        "payment_button_selectors" : "form[action$='/cart/add'] .shopify-payment-button",
+        "payment_button_custom_selectors" : ".shopify-payment-button-shopy",
+        "shopyPreOrderButtonSelector": "#AddToCart",
+        "cartLineItemSelector": ""
+      },
+      "shop": "4ocean.myshopify.com",
+      "multilocation": "",
+      "preOrderDesign": {"id":613,"shop":"4ocean.myshopify.com","backgroundColor":"#0057b8","paddingLeft":null,"paddingTop":null,"borderRadius":null,"borderColor":"#0057b8","borderWidth":"0px","color":"#ffffff","fontSize":null,"fontFamily":null,"fontStyle":null,"fontWeight":null,"textDecoration":null,"customCss":null},
+      "defaultSetting": {"quantityLimit":1,"preOrderMaxLimit":1,"buttonText":"Add to my cart","buttonMessage":"Add to my cart","preOrderClosedMessage":"Sold Out","cartCheckoutLabel":"Pre-ordered items","preOrderTimeEnable":false,"dateStart":"-1","dateStop":"-1","discountType":"PERCENTAGE","orderTag":"shopyshaper-pre-order","comingSoonEnable":false,"comingSoonHeader":"Coming Soon","comingSoonMessage":"Dropping on","comingSoonAvailableFrom":"-1","countDownStyle":"STYLE_ONE","showPreOrderLabel":false,"preOrderLabelText":"Pre-order","showCartLevelImmediately":false}
+    };
+
+    _PREORDERConfig.shop = '4ocean.myshopify.com';
+
+
+    
+
+</script>
+<!--BeginCFFPersistentCartCart-->
+
+
+<script>
+    window.cffPCLiquidPlaced = true
+</script>
+
+<!--EndCFFPersistentCartCart--><!--Gorgias Chat Widget Start--><script id="gorgias-chat-widget-install-v2" src="https://config.gorgias.chat/gorgias-chat-bundle-loader.js?applicationId=307"></script>
+<script id="gorgias-chat-shopify-install">!function(_){_.SHOPIFY_PERMANENT_DOMAIN="4ocean.myshopify.com",_.SHOPIFY_CUSTOMER_ID="",_.SHOPIFY_CUSTOMER_EMAIL=""}(window||{});</script><!--Gorgias Chat Widget End-->
+</body>
+</html>
